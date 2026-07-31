@@ -253,6 +253,7 @@ export function LifecyclePage() {
     </div>
   );
 }
+export default LifecyclePage;
 
 const TIMELINE = [
   {

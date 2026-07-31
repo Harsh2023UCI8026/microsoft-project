@@ -374,3 +374,5 @@ const COVERAGE = [
     recommended: "Highway commuters",
   },
 ];
+
+export default HeroMotorPage;

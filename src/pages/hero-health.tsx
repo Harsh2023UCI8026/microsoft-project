@@ -201,6 +201,7 @@ export function HeroHealthPage() {
     </div>
   );
 }
+export default HeroHealthPage;
 
 function HealthGlassIllustration() {
   return (

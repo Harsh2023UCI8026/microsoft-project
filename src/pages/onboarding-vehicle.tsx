@@ -60,25 +60,22 @@ export function OnboardingVehiclePage() {
           ].map((s, i) => (
             <div
               key={s.label}
-              className={`rounded-xl border p-3 text-center ${
-                s.active
+              className={`rounded-xl border p-3 text-center ${s.active
                   ? "border-blue-500 bg-blue-50"
                   : s.done
-                  ? "border-emerald-200 bg-emerald-50"
-                  : "border-slate-200 bg-white"
-              }`}
+                    ? "border-emerald-200 bg-emerald-50"
+                    : "border-slate-200 bg-white"
+                }`}
             >
               <div className="flex items-center justify-center gap-2">
-                <span className={`flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold ${
-                  s.active ? "bg-blue-600 text-white"
-                  : s.done ? "bg-emerald-500 text-white"
-                  : "bg-slate-200 text-slate-500"
-                }`}>
+                <span className={`flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold ${s.active ? "bg-blue-600 text-white"
+                    : s.done ? "bg-emerald-500 text-white"
+                      : "bg-slate-200 text-slate-500"
+                  }`}>
                   {s.done ? <CheckCircle2 className="h-3 w-3" /> : i + 1}
                 </span>
-                <span className={`text-xs font-medium ${
-                  s.active ? "text-blue-700" : s.done ? "text-emerald-700" : "text-slate-500"
-                }`}>
+                <span className={`text-xs font-medium ${s.active ? "text-blue-700" : s.done ? "text-emerald-700" : "text-slate-500"
+                  }`}>
                   {s.label}
                 </span>
               </div>
@@ -172,11 +169,10 @@ export function OnboardingVehiclePage() {
                   <button
                     key={u.value}
                     onClick={() => setUsage(u.value)}
-                    className={`rounded-xl border p-3 text-left transition-all ${
-                      usage === u.value
+                    className={`rounded-xl border p-3 text-left transition-all ${usage === u.value
                         ? "border-blue-500 bg-blue-50"
                         : "border-slate-200 bg-white hover:border-slate-300"
-                    }`}
+                      }`}
                   >
                     <div className="text-sm font-semibold text-slate-900">{u.label}</div>
                     <div className="text-[11px] text-slate-500">{u.desc}</div>
@@ -355,3 +351,5 @@ export function OnboardingVehiclePage() {
     </div>
   );
 }
+
+export default OnboardingVehiclePage;

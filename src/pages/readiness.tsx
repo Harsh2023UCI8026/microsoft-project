@@ -99,11 +99,10 @@ export function ReadinessPage() {
           {READINESS_CHECKS.map((c) => (
             <SoftCard key={c.label} padding="sm">
               <div className="flex items-center justify-between mb-2">
-                <span className={`flex h-9 w-9 items-center justify-center rounded-xl ${
-                  c.status === "pass" ? "bg-emerald-50 text-emerald-600"
-                  : c.status === "warn" ? "bg-amber-50 text-amber-600"
-                  : "bg-rose-50 text-rose-600"
-                }`}>
+                <span className={`flex h-9 w-9 items-center justify-center rounded-xl ${c.status === "pass" ? "bg-emerald-50 text-emerald-600"
+                    : c.status === "warn" ? "bg-amber-50 text-amber-600"
+                      : "bg-rose-50 text-rose-600"
+                  }`}>
                   {c.icon}
                 </span>
                 {c.status === "pass" ? (
@@ -141,11 +140,10 @@ export function ReadinessPage() {
               <div className="space-y-2">
                 {DOCS_STATUS.map((d) => (
                   <div key={d.label} className="flex items-center gap-3 rounded-lg border border-slate-200 p-3">
-                    <span className={`flex h-9 w-9 items-center justify-center rounded-lg ${
-                      d.status === "verified" ? "bg-emerald-50 text-emerald-600"
-                      : d.status === "expiring" ? "bg-amber-50 text-amber-600"
-                      : "bg-rose-50 text-rose-600"
-                    }`}>
+                    <span className={`flex h-9 w-9 items-center justify-center rounded-lg ${d.status === "verified" ? "bg-emerald-50 text-emerald-600"
+                        : d.status === "expiring" ? "bg-amber-50 text-amber-600"
+                          : "bg-rose-50 text-rose-600"
+                      }`}>
                       {d.status === "verified" ? <CheckCircle2 className="h-4 w-4" /> : <AlertTriangle className="h-4 w-4" />}
                     </span>
                     <div className="flex-1 min-w-0">
@@ -361,3 +359,5 @@ const INSIGHTS = [
     description: "Hospital wait times are lowest between 7-9 AM at your nearest ER.",
   },
 ];
+
+export default ReadinessPage;

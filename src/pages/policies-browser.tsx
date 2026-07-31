@@ -172,9 +172,8 @@ export function PoliciesBrowserPage() {
                   <button
                     key={t.v}
                     onClick={() => setType(t.v)}
-                    className={`flex-1 rounded-lg px-3 py-1.5 text-xs font-medium transition-all ${
-                      type === t.v ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                    }`}
+                    className={`flex-1 rounded-lg px-3 py-1.5 text-xs font-medium transition-all ${type === t.v ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                      }`}
                   >
                     {t.label}
                   </button>
@@ -360,3 +359,5 @@ export function PoliciesBrowserPage() {
     </div>
   );
 }
+
+export default PoliciesBrowserPage;

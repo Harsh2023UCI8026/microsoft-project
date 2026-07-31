@@ -131,9 +131,8 @@ export function SimplifierPage() {
             {/* Right — action */}
             <div className="flex flex-col justify-center gap-3">
               <div className="flex items-center gap-3">
-                <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${
-                  simplifying ? "bg-blue-100 text-blue-700" : simplified ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-500"
-                }`}>
+                <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${simplifying ? "bg-blue-100 text-blue-700" : simplified ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-500"
+                  }`}>
                   {simplifying ? <RefreshCw className="h-5 w-5 animate-spin" /> : simplified ? <CheckCircle2 className="h-5 w-5" /> : <Brain className="h-5 w-5" />}
                 </span>
                 <div className="flex-1">
@@ -178,9 +177,8 @@ export function SimplifierPage() {
               <div className="mt-3 grid grid-cols-5 gap-1.5 text-[10px]">
                 {["Upload", "OCR", "Extract clauses", "Score impact", "Plain English"].map((step, i) => (
                   <div key={step} className={`text-center ${i < 3 ? "text-emerald-600" : "text-slate-400"}`}>
-                    <div className={`mx-auto mb-1 flex h-5 w-5 items-center justify-center rounded-full text-[9px] font-bold ${
-                      i < 3 ? "bg-emerald-100 text-emerald-700" : "bg-slate-100"
-                    }`}>
+                    <div className={`mx-auto mb-1 flex h-5 w-5 items-center justify-center rounded-full text-[9px] font-bold ${i < 3 ? "bg-emerald-100 text-emerald-700" : "bg-slate-100"
+                      }`}>
                       {i < 3 ? "✓" : i + 1}
                     </div>
                     {step}
@@ -206,15 +204,13 @@ export function SimplifierPage() {
                     <button
                       key={i}
                       onClick={() => setActiveClause(i)}
-                      className={`flex w-full items-start gap-2 rounded-lg p-2 text-left transition-colors ${
-                        activeClause === i ? "bg-blue-50 text-blue-700" : "hover:bg-slate-50 text-slate-700"
-                      }`}
+                      className={`flex w-full items-start gap-2 rounded-lg p-2 text-left transition-colors ${activeClause === i ? "bg-blue-50 text-blue-700" : "hover:bg-slate-50 text-slate-700"
+                        }`}
                     >
-                      <span className={`mt-0.5 flex h-5 w-5 items-center justify-center rounded-full text-[9px] font-bold ${
-                        c.impact === "high" ? "bg-rose-100 text-rose-700"
-                        : c.impact === "medium" ? "bg-amber-100 text-amber-700"
-                        : "bg-emerald-100 text-emerald-700"
-                      }`}>
+                      <span className={`mt-0.5 flex h-5 w-5 items-center justify-center rounded-full text-[9px] font-bold ${c.impact === "high" ? "bg-rose-100 text-rose-700"
+                          : c.impact === "medium" ? "bg-amber-100 text-amber-700"
+                            : "bg-emerald-100 text-emerald-700"
+                        }`}>
                         {i + 1}
                       </span>
                       <div className="min-w-0 flex-1">
@@ -247,12 +243,12 @@ export function SimplifierPage() {
                   <div className="flex items-center gap-2">
                     <Pill variant={
                       SAMPLE_CLAUSES[activeClause].impact === "high" ? "red"
-                      : SAMPLE_CLAUSES[activeClause].impact === "medium" ? "amber"
-                      : "green"
+                        : SAMPLE_CLAUSES[activeClause].impact === "medium" ? "amber"
+                          : "green"
                     }>
                       {SAMPLE_CLAUSES[activeClause].impact === "high" ? "High impact"
-                      : SAMPLE_CLAUSES[activeClause].impact === "medium" ? "Medium impact"
-                      : "Low impact"}
+                        : SAMPLE_CLAUSES[activeClause].impact === "medium" ? "Medium impact"
+                          : "Low impact"}
                     </Pill>
                     <span className="text-xs text-slate-500">{SAMPLE_CLAUSES[activeClause].category}</span>
                   </div>
@@ -372,3 +368,5 @@ export function SimplifierPage() {
     </div>
   );
 }
+
+export default SimplifierPage;

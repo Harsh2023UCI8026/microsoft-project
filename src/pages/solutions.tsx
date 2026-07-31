@@ -108,3 +108,5 @@ const SOLUTIONS = [
     toneText: "text-emerald-600",
   },
 ];
+
+export default SolutionsPage;

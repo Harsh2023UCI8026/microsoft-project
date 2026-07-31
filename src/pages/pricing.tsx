@@ -100,17 +100,15 @@ export function PricingPage() {
           <div className="mt-7 inline-flex items-center gap-1 rounded-full bg-slate-100 p-1">
             <button
               onClick={() => setYearly(false)}
-              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${
-                !yearly ? "bg-white text-blue-700 shadow-soft" : "text-slate-600"
-              }`}
+              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${!yearly ? "bg-white text-blue-700 shadow-soft" : "text-slate-600"
+                }`}
             >
               Monthly
             </button>
             <button
               onClick={() => setYearly(true)}
-              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${
-                yearly ? "bg-white text-blue-700 shadow-soft" : "text-slate-600"
-              }`}
+              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${yearly ? "bg-white text-blue-700 shadow-soft" : "text-slate-600"
+                }`}
             >
               Yearly
               <span className="ml-1.5 inline-flex items-center rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-bold text-emerald-700">
@@ -127,9 +125,8 @@ export function PricingPage() {
             <SoftCard
               key={p.name}
               padding="lg"
-              className={`flex flex-col gap-4 relative ${
-                p.highlighted ? "ring-2 ring-blue-500 shadow-soft-lg" : ""
-              }`}
+              className={`flex flex-col gap-4 relative ${p.highlighted ? "ring-2 ring-blue-500 shadow-soft-lg" : ""
+                }`}
             >
               {p.highlighted && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-full bg-blue-600 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-soft">
@@ -137,9 +134,8 @@ export function PricingPage() {
                 </span>
               )}
               <div className="flex items-center gap-2">
-                <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${
-                  p.highlighted ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600"
-                }`}>
+                <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${p.highlighted ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600"
+                  }`}>
                   {p.icon}
                 </span>
                 <h3 className="text-lg font-bold text-slate-900">{p.name}</h3>
@@ -161,9 +157,8 @@ export function PricingPage() {
               </div>
               <Button
                 onClick={() => navigate("onboarding")}
-                className={`w-full rounded-xl font-semibold h-10 ${
-                  p.highlighted ? "bg-blue-600 hover:bg-blue-700 text-white" : ""
-                }`}
+                className={`w-full rounded-xl font-semibold h-10 ${p.highlighted ? "bg-blue-600 hover:bg-blue-700 text-white" : ""
+                  }`}
                 variant={p.highlighted ? "default" : "outline"}
               >
                 {p.cta}
@@ -246,3 +241,5 @@ const FAQS = [
     a: "Yes. We use bank-grade AES-256 encryption in transit and at rest. We're SOC 2 Type II and ISO 27001 certified.",
   },
 ];
+
+export default PricingPage;

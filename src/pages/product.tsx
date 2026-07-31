@@ -214,3 +214,5 @@ const WHY = [
     description: "Members save an average of 32% on premiums by switching to AI-tuned plans.",
   },
 ];
+
+export default ProductPage;

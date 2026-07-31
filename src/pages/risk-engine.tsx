@@ -145,9 +145,8 @@ export function RiskEnginePage() {
                       </div>
                       <div className="h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
                         <div
-                          className={`h-full rounded-full ${
-                            r.tone === "green" ? "bg-emerald-500" : r.tone === "amber" ? "bg-amber-500" : "bg-rose-500"
-                          }`}
+                          className={`h-full rounded-full ${r.tone === "green" ? "bg-emerald-500" : r.tone === "amber" ? "bg-amber-500" : "bg-rose-500"
+                            }`}
                           style={{ width: `${r.score}%` }}
                         />
                       </div>
@@ -179,9 +178,8 @@ export function RiskEnginePage() {
                     </div>
                     <div className="h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
                       <div
-                        className={`h-full rounded-full ${
-                          v.tone === "green" ? "bg-emerald-500" : v.tone === "amber" ? "bg-amber-500" : "bg-rose-500"
-                        }`}
+                        className={`h-full rounded-full ${v.tone === "green" ? "bg-emerald-500" : v.tone === "amber" ? "bg-amber-500" : "bg-rose-500"
+                          }`}
                         style={{ width: `${v.score}%` }}
                       />
                     </div>
@@ -402,7 +400,7 @@ const TOP_RECS = [
     impact: "Saves ₹1L on major claim",
     delta: "+₹1,800/yr",
     tone: "amber",
-    description: "20% co-pay will cost more than the premium difference on a single major claim.",
+    description: "20% co-pay will cost more than the premium difference on a major claim.",
   },
   {
     title: "Annual health checkup",
@@ -412,3 +410,5 @@ const TOP_RECS = [
     description: "Annual full-body checkup reduces late-stage diagnosis probability by 47%.",
   },
 ];
+
+export default RiskEnginePage;

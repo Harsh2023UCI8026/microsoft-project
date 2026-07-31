@@ -241,6 +241,7 @@ export function HeroFamilyPage() {
     </div>
   );
 }
+export default HeroFamilyPage;
 
 function FamilyIllustration() {
   return (

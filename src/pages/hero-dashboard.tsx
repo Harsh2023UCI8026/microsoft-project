@@ -174,6 +174,7 @@ export function HeroDashboardPage() {
     </div>
   );
 }
+export default HeroDashboardPage;
 
 function DashboardPreview() {
   return (

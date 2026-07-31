@@ -357,6 +357,8 @@ export function PolicyInspectorPage() {
   );
 }
 
+export default PolicyInspectorPage;
+
 const KEY_INSIGHTS = [
   {
     label: "Sum Insured",

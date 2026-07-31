@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { useRouter } from "@/lib/router";
+import { api, type ChatThread } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { SoftCard, Pill } from "@/components/site-primitives";
 import {
@@ -70,18 +71,23 @@ export function AIAssistantPage() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, isThinking]);
 
-  const sendMessage = (text: string) => {
+  const sendMessage = async (text: string) => {
     if (!text.trim()) return;
     const now = new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
     setMessages((m) => [...m, { role: "user", content: text, ts: now }]);
     setInput("");
     setIsThinking(true);
 
-    setTimeout(() => {
-      const response = generateResponse(text);
-      setMessages((m) => [...m, { role: "assistant", content: response, ts: now }]);
+    try {
+      const result = await api.sendChat(text);
+      setMessages((m) => [...m, { role: "assistant", content: result.response, ts: result.ts }]);
+    } catch (err: any) {
+      // Fallback to local generation if the API is unavailable
+      const fallback = generateResponse(text);
+      setMessages((m) => [...m, { role: "assistant", content: fallback, ts: now }]);
+    } finally {
       setIsThinking(false);
-    }, 1400);
+    }
   };
 
   return (

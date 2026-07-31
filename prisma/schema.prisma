@@ -1,8 +1,5 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+// InsurIntel AI — Prisma schema
+// Precision underwriting platform data model
 
 generator client {
   provider = "prisma-client-js"
@@ -14,19 +11,139 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(cuid())
-  email     String   @unique
-  name      String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id              String   @id @default(cuid())
+  email           String   @unique
+  name            String?
+  hashedPassword  String?
+  role            String   @default("user") // user | broker | admin
+  avatarInitials  String?
+  underwritingScore Int   @default(0) // 0-100
+  riskScore       Int      @default(0) // 0-100, lower = better
+  city            String?
+  memberSince     DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  policies        UserPolicy[]
+  chatThreads     ChatThread[]
+  claimSimulations ClaimSimulation[]
+  recommendations Recommendation[]
+  emergencyClaims  EmergencyClaim[]
 }
 
-model Post {
-  id        String   @id @default(cuid())
-  title     String
-  content   String?
-  published Boolean  @default(false)
-  authorId  String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model Policy {
+  id             String   @id @default(cuid())
+  name           String
+  insurer        String
+  type           String   // health | motor | life | home | travel | business
+  sumInsured     Int      // in INR
+  premiumAnnual  Int      // in INR
+  transparency   Int      // 0-100
+  claimApproval  Int      // 0-100
+  cashlessCount  Int      // number of cashless hospitals
+  rating         Float    @default(4.5)
+  reviewCount    Int      @default(0)
+  matchScore     Int      @default(80) // AI match score
+  redFlagCount   Int      @default(0)
+  tags           String   // comma-separated tags
+  benefits       String   // pipe-separated benefits
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  userPolicies    UserPolicy[]
+  recommendations Recommendation[]
+}
+
+model UserPolicy {
+  id           String   @id @default(cuid())
+  userId       String
+  policyId     String
+  status       String   @default("active") // active | lapsed | pending | renewing
+  startDate    DateTime
+  endDate      DateTime?
+  premiumPaid  Int
+  sumInsured   Int
+  createdAt    DateTime @default(now())
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  policy       Policy   @relation(fields: [policyId], references: [id])
+}
+
+model ChatThread {
+  id         String   @id @default(cuid())
+  userId     String
+  title      String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages   ChatMessage[]
+}
+
+model ChatMessage {
+  id         String   @id @default(cuid())
+  threadId   String
+  role       String   // user | assistant
+  content    String
+  createdAt  DateTime @default(now())
+
+  thread     ChatThread @relation(fields: [threadId], references: [id], onDelete: Cascade)
+}
+
+model ClaimSimulation {
+  id            String   @id @default(cuid())
+  userId        String
+  policyType    String   // health | motor | home
+  scenario      String
+  billAmount    Int
+  coveragePct   Int
+  approvalProb  Int
+  outOfPocket   Int
+  createdAt     DateTime @default(now())
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Recommendation {
+  id         String   @id @default(cuid())
+  userId     String
+  policyId   String
+  rank       Int      // 1 = top
+  matchScore Int
+  reason     String
+  createdAt  DateTime @default(now())
+
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  policy     Policy   @relation(fields: [policyId], references: [id])
+}
+
+model EmergencyClaim {
+  id           String   @id @default(cuid())
+  userId       String
+  claimNumber  String
+  emergencyType String  // cardiac | accident | hospitalization | critical
+  hospitalName String?
+  status       String   @default("filed") // filed | documents | preauth | treatment | settlement
+  preauthAmount Int     @default(0)
+  approvedAmount Int    @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model RiskAssessment {
+  id            String   @id @default(cuid())
+  userId        String
+  overallScore  Int      // 0-100, lower = better
+  healthScore   Int
+  lifestyleScore Int
+  occupationScore Int
+  geographicScore Int
+  aiConfidence  Int      // 0-100
+  projection1y  Int
+  projection3y  Int
+  projection5y  Int
+  insights      String   // JSON string of insight array
+  createdAt     DateTime @default(now())
 }

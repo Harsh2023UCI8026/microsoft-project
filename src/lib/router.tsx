@@ -55,6 +55,7 @@ export type Route =
   | "inspector"
   | "simulator"
   | "assistant"
+  | "simplifier"
   | "recommendations"
   | "risk-engine"
   | "diagnostic"
@@ -62,6 +63,7 @@ export type Route =
   | "emergency"
   | "family-vault"
   | "readiness"
+  | "about"
   | "hero-health"
   | "hero-motor"
   | "hero-family"
@@ -139,6 +141,12 @@ function pathToRoute(path: string): Route {
       return "hero-family";
     case "hero/dashboard":
       return "hero-dashboard";
+    case "simplifier":
+    case "ai-simplifier":
+      return "simplifier";
+    case "about":
+    case "user-about":
+      return "about";
     default:
       return "home";
   }
@@ -171,6 +179,8 @@ export function routeToHash(route: Route): string {
     "hero-motor": "/hero/motor",
     "hero-family": "/hero/family",
     "hero-dashboard": "/hero/dashboard",
+    "simplifier": "/simplifier",
+    "about": "/about",
   };
   return `#${map[route]}`;
 }

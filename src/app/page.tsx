@@ -17,6 +17,8 @@ import { PoliciesBrowserPage } from "@/pages/policies-browser";
 import { PolicyInspectorPage } from "@/pages/policy-inspector";
 import { ClaimSimulatorPage } from "@/pages/claim-simulator";
 import { AIAssistantPage } from "@/pages/ai-assistant";
+import { SimplifierPage } from "@/pages/simplifier";
+import { AboutPage } from "@/pages/about";
 import { RecommendationsPage } from "@/pages/recommendations";
 import { RiskEnginePage } from "@/pages/risk-engine";
 import { DiagnosticEnginePage } from "@/pages/diagnostic-engine";
@@ -84,6 +86,12 @@ function Shell() {
       break;
     case "assistant":
       page = <AIAssistantPage />;
+      break;
+    case "simplifier":
+      page = <SimplifierPage />;
+      break;
+    case "about":
+      page = <AboutPage />;
       break;
     case "recommendations":
       page = <RecommendationsPage />;

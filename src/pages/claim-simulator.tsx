@@ -3,6 +3,7 @@
 import * as React from "react";
 import { useRouter } from "@/lib/router";
 import { Button } from "@/components/ui/button";
+import { api } from "@/lib/api";
 import {
   SoftCard,
   Pill,
@@ -26,6 +27,7 @@ import {
   Car,
   Home as HomeIcon,
   Zap,
+  Loader2,
 } from "lucide-react";
 
 const STEPS = [
@@ -39,10 +41,31 @@ export function ClaimSimulatorPage() {
   const [policyType, setPolicyType] = React.useState("health");
   const [scenario, setScenario] = React.useState("hospitalization");
   const [billAmount, setBillAmount] = React.useState(500000);
+  const [simulating, setSimulating] = React.useState(false);
+  const [result, setResult] = React.useState<any>(null);
 
-  const approval = 94;
-  const coverage = 78;
-  const outOfPocket = Math.round(billAmount * (1 - coverage / 100));
+  const approval = result?.approvalProb ?? 94;
+  const coverage = result?.coveragePct ?? 78;
+  const outOfPocket = result?.outOfPocket ?? Math.round(billAmount * (1 - coverage / 100));
+
+  // Run simulation when inputs change
+  const runSimulation = React.useCallback(async () => {
+    setSimulating(true);
+    try {
+      const r = await api.simulateClaim({ policyType, scenario, billAmount });
+      setResult(r);
+    } catch (err) {
+      // Keep the computed fallback values
+      setResult(null);
+    } finally {
+      setSimulating(false);
+    }
+  }, [policyType, scenario, billAmount]);
+
+  React.useEffect(() => {
+    const t = setTimeout(runSimulation, 350); // debounce
+    return () => clearTimeout(t);
+  }, [runSimulation]);
 
   return (
     <div className="bg-slate-50 min-h-screen">
@@ -220,20 +243,29 @@ export function ClaimSimulatorPage() {
 
               {/* Coverage breakdown chart */}
               <div className="mt-6 pt-6 border-t border-slate-100">
-                <div className="text-xs font-semibold text-slate-700 mb-3">Coverage breakdown</div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-xs font-semibold text-slate-700">Coverage breakdown</div>
+                  {simulating && (
+                    <span className="inline-flex items-center gap-1 text-[10px] text-blue-600">
+                      <Loader2 className="h-3 w-3 animate-spin" /> Recomputing...
+                    </span>
+                  )}
+                </div>
                 <div className="space-y-2">
-                  {[
-                    { label: "Base sum insured", value: "₹7,80,000", pct: 78, tone: "bg-emerald-500" },
-                    { label: "No-claim bonus", value: "₹1,00,000", pct: 10, tone: "bg-blue-500" },
-                    { label: "Sub-limit deductions", value: "-₹1,20,000", pct: 12, tone: "bg-rose-400" },
-                    { label: "Co-pay (20%)", value: "-₹1,00,000", pct: 10, tone: "bg-rose-500" },
-                  ].map((row) => (
+                  {(result?.breakdown || [
+                    { label: "Base sum insured", value: Math.round(billAmount * 0.78), pct: 78, tone: "bg-emerald-500" },
+                    { label: "No-claim bonus", value: Math.round(billAmount * 0.10), pct: 10, tone: "bg-blue-500" },
+                    { label: "Sub-limit deductions", value: -Math.round(billAmount * 0.12), pct: 12, tone: "bg-rose-400" },
+                    { label: "Co-pay (20%)", value: -Math.round(billAmount * 0.10), pct: 10, tone: "bg-rose-500" },
+                  ]).map((row: any) => (
                     <div key={row.label} className="flex items-center gap-3">
                       <div className="text-xs text-slate-600 w-40">{row.label}</div>
                       <div className="flex-1 h-2 rounded-full bg-slate-100 overflow-hidden">
                         <div className={`h-full rounded-full ${row.tone}`} style={{ width: `${row.pct * 4}%` }} />
                       </div>
-                      <div className="text-xs font-semibold text-slate-900 w-24 text-right tabular-nums">{row.value}</div>
+                      <div className="text-xs font-semibold text-slate-900 w-24 text-right tabular-nums">
+                        {row.value < 0 ? "-" : ""}₹{Math.abs(row.value).toLocaleString("en-IN")}
+                      </div>
                     </div>
                   ))}
                 </div>

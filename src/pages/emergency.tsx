@@ -343,6 +343,8 @@ export function EmergencyPage() {
   );
 }
 
+export default EmergencyPage;
+
 const DOCS = [
   { label: "Aadhaar card", detail: "ID proof · 1 MB · uploaded", submitted: true },
   { label: "Health card", detail: "Policy #INS-4402 · uploaded", submitted: true },

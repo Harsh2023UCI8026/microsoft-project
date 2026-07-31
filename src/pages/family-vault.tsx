@@ -300,3 +300,5 @@ export function FamilyVaultPage() {
     </div>
   );
 }
+
+export default FamilyVaultPage;

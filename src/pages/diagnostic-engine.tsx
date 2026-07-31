@@ -392,3 +392,4 @@ const FIXES = [
     cost: "+₹1,200/yr",
   },
 ];
+export default DiagnosticEnginePage;

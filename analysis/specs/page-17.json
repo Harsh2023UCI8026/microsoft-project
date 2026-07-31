@@ -1,0 +1,348 @@
+{
+  "page_id": "page-01",
+  "page_type": "dashboard",
+  "page_name": "Emergency Insurance Dashboard",
+  "purpose": "A comprehensive emergency insurance dashboard that allows users to select their emergency type, track active claims in real-time, upload required documents, view hospital information, and access instant AI-powered approval probability along with emergency contacts and support resources.",
+  "navigation_to": [
+    "Live Support",
+    "Hospitals",
+    "Protocol",
+    "Emergency Call",
+    "Emergency Dashboard",
+    "Claims Center",
+    "Medical Readiness",
+    "Policy Details",
+    "Support History",
+    "New Claim",
+    "Help Center"
+  ],
+  "color_palette": {
+    "background": "#F0F4F8",
+    "surface": "#FFFFFF",
+    "text_primary": "#1E293B",
+    "text_secondary": "#64748B",
+    "accent": "#1D4ED8",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Inter, -apple-system, sans-serif",
+    "body_font": "Inter, -apple-system, sans-serif",
+    "heading_size_px": 28,
+    "body_size_px": 14,
+    "heading_weight": 600,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1440,
+    "container": "grid",
+    "columns": 3,
+    "header_present": true,
+    "footer_present": false,
+    "sidebar_present": true,
+    "sections": [
+      "Top Navigation Bar",
+      "Left Sidebar Navigation",
+      "Main Content Area - Emergency Type Selection",
+      "Active Claim Tracking Progress Bar",
+      "Three-Column Dashboard Grid (Documents, Hospital Info, Help/Contacts)",
+      "Bottom Dashboard Grid (Timeline, Approval Probability, Additional Assistance)"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "AssureAI Emergency",
+    "nav_items": [
+      "Live Support",
+      "Hospitals",
+      "Protocol"
+    ],
+    "right_side": [
+      "Emergency Call (button)",
+      "Notification Bell Icon",
+      "Settings Gear Icon"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": true
+  },
+  "hero": {
+    "present": false,
+    "headline": "",
+    "subheadline": "",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "",
+    "background": ""
+  },
+  "content_sections": [
+    {
+      "name": "Emergency Type Selection",
+      "type": "features_grid",
+      "heading": "What is your emergency?",
+      "subheading": "",
+      "items": [
+        {
+          "label": "Hospitalized Today",
+          "icon": "cloud-medical/hospital-bed",
+          "state": "selected"
+        },
+        {
+          "label": "Accident",
+          "icon": "car-crash",
+          "state": "default"
+        },
+        {
+          "label": "ICU",
+          "icon": "asterisk/star-of-life",
+          "state": "default"
+        },
+        {
+          "label": "Critical Illness",
+          "icon": "heart-pulse",
+          "state": "default"
+        },
+        {
+          "label": "Vehicle Accident",
+          "icon": "car-side",
+          "state": "default"
+        }
+      ],
+      "layout": "grid-3"
+    },
+    {
+      "name": "Active Claim Tracking",
+      "type": "steps",
+      "heading": "Active Claim Tracking",
+      "subheading": "AI Assisted Processing",
+      "items": [
+        {
+          "step": "Incident Reported",
+          "time": "10:46 AM",
+          "status": "completed"
+        },
+        {
+          "step": "Doc Verification",
+          "status": "in_progress"
+        },
+        {
+          "step": "Hospital Auth",
+          "status": "pending"
+        },
+        {
+          "step": "Cashless Approval",
+          "status": "pending"
+        }
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Required Documents",
+      "type": "content_blocks",
+      "heading": "Required Documents",
+      "subheading": "",
+      "items": [
+        {
+          "label": "Digital Health ID",
+          "status": "VERIFIED",
+          "icon": "check-circle"
+        },
+        {
+          "label": "Admit Note",
+          "status": "UPLOAD",
+          "icon": "circle-outline"
+        },
+        {
+          "label": "Last 24h Reports",
+          "status": "UPLOAD",
+          "icon": "circle-outline"
+        }
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Hospital Information Card",
+      "type": "other",
+      "heading": "Cashless Hospital",
+      "subheading": "",
+      "items": [
+        "City General Hospital",
+        "0.8km away • Emergency Wing Open",
+        "[Map placeholder image with location pin]",
+        "Get Directions button"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Insurance Helpline Card",
+      "type": "cta_band",
+      "heading": "Insurance Helpline",
+      "subheading": "DIRECT PRIORITY LINE +1(800) 555-0199",
+      "items": [
+        "Call Now button",
+        "24/7 Elite Tier Dedicated Support"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Emergency Contacts",
+      "type": "content_blocks",
+      "heading": "Emergency Contacts",
+      "subheading": "",
+      "items": [
+        {
+          "name": "Sarah Mitchell",
+          "relation": "Spouse • Primary",
+          "initials": "SM"
+        },
+        {
+          "name": "David Mitchell",
+          "relation": "Brother • Secondary",
+          "initials": "DM"
+        }
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Claim Process Timeline",
+      "type": "steps",
+      "heading": "Claim Process Timeline",
+      "subheading": "",
+      "items": [
+        {
+          "label": "Document Verification",
+          "detail": "Checking digital reports & ID",
+          "time": "15 mins",
+          "active": true
+        },
+        {
+          "label": "Policy Eligibility",
+          "detail": "Matching plan coverage",
+          "time": "5 mins",
+          "active": false
+        },
+        {
+          "label": "Final Authorization",
+          "detail": "Hospital coordination",
+          "time": "10 mins",
+          "active": false
+        }
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Instant Approval Probability",
+      "type": "stats",
+      "heading": "Instant Approval Probability",
+      "subheading": "Based on your Elite Tier status and pre-verified medical records.",
+      "items": [
+        "92% READY",
+        "RECORDS SYNCED badge"
+      ],
+      "layout": "grid-1"
+    },
+    {
+      "name": "Additional Assistance",
+      "type": "features_grid",
+      "heading": "Additional Assistance",
+      "subheading": "",
+      "items": [
+        {
+          "title": "Legal Aid",
+          "desc": "Insurance claim legal support",
+          "icon": "scales"
+        },
+        {
+          "title": "Ambulance Support",
+          "desc": "Request critical care transport",
+          "icon": "ambulance"
+        },
+        {
+          "title": "Mental Health Counselor",
+          "desc": "Emergency trauma support line",
+          "icon": "brain/flower"
+        }
+      ],
+      "layout": "rows"
+    }
+  ],
+  "footer": {
+    "present": false,
+    "columns": [],
+    "links": [],
+    "copyright_text": "",
+    "social_icons": [],
+    "background_color": ""
+  },
+  "forms": [],
+  "buttons": [
+    {
+      "label": "Emergency Call",
+      "style": "primary",
+      "location": "header right"
+    },
+    {
+      "label": "+ New Claim",
+      "style": "ghost",
+      "location": "sidebar bottom"
+    },
+    {
+      "label": "Call Now",
+      "style": "outline-white",
+      "location": "helpline card"
+    },
+    {
+      "label": "Get Directions",
+      "style": "primary-dark",
+      "location": "hospital card"
+    }
+  ],
+  "icons": [
+    "user avatar in sidebar header",
+    "asterisk/sparkle icon for active nav item",
+    "document icon for Claims Center",
+    "shield icon for Medical Readiness",
+    "file-text icon for Policy Details",
+    "clock-history icon for Support History",
+    "plus icon for New Claim",
+    "question-circle icon for Help Center",
+    "cloud-medical icon for Hospitalized Today",
+    "car-crash icon for Accident",
+    "star-of-life icon for ICU",
+    "heart-pulse icon for Critical Illness",
+    "car-side icon for Vehicle Accident",
+    "headset icon for Insurance Helpline",
+    "phone icon in Call Now button",
+    "folder icon for Required Documents",
+    "check-circle for verified status",
+    "circle-outline for pending upload",
+    "hospital-plus icon for Cashless Hospital",
+    "map-pin/direction icon for Get Directions",
+    "phone icons next to emergency contacts",
+    "clock icon for Claim Process Timeline",
+    "circular progress indicator for 92% approval",
+    "scales icon for Legal Aid",
+    "ambulance icon for Ambulance Support",
+    "flower/mental health icon for Mental Health Counselor",
+    "sparkles icon for AI Insight label"
+  ],
+  "images": [
+    "User profile photo placeholder (circular) in sidebar",
+    "Medical kit/bag watermark illustration behind emergency selection area",
+    "Map placeholder image showing hospital location with blue pin marker"
+  ],
+  "animations_interactions": [
+    "Hover states on emergency type cards (shadow/elevation increase)",
+    "Selected state styling on Hospitalized Today card (blue background, white text)",
+    "Progress bar animation for Active Claim Tracking",
+    "Circular progress ring animation for 92% approval probability",
+    "Button hover effects (color darkening/shadow)",
+    "Sidebar nav item hover highlighting",
+    "Document upload row hover states"
+  ],
+  "responsive_cues": [
+    "3-column grid layout suggests desktop-first design",
+    "Left sidebar navigation typical of dashboard applications",
+    "Card-based layout will stack vertically on mobile devices",
+    "Emergency selection grid likely becomes 2-column or single column on tablet/mobile"
+  ],
+  "notes": "This is a sophisticated insurance emergency response dashboard with a clean, medical/professional aesthetic using a blue primary color scheme. The layout uses a persistent left sidebar for navigation, a top header bar, and a main content area organized into multiple card-based sections. Key interactive elements include the emergency type selector (with one option pre-selected), document upload checklist, real-time claim tracking progress indicator, and an AI-powered approval probability meter showing 92%. The design emphasizes urgency and clarity with clear visual hierarchy, status indicators (verified/upload/pending), and prominent emergency contact options including a direct priority phone line."
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_id\": \"page-01\",\n  \"page_type\": \"landing\",\n  \"page_name\": \"Product Dashboard Preview\",\n  \"purpose\": \"Showcase the main dashboard interface of an AI-powered insurance/policy analysis tool, highlighting key features like match scoring, PDF inspection, risk analysis, and policy comparison.\",\n  \"navigation_to\": [\"login\", \"signup\", \"pricing\", \"features\"],\n  \"color_palette\": {\n    \"background\": \"#F5F7FA\",\n    \"surface\": \"#FFFFFF\",\n    \"text_primary\": \"#1F2937\",\n    \"text_secondary\": \"#6B7280\",\n    \"accent\": \"#6B9DFC\",\n    \"border\": \"#E5E7EB\"\n  },\n  \"typography\": {\n    \"heading_font\": \"Inter, -apple-system, sans-serif\",\n    \"body_font\": \"Inter, -apple-system, sans-serif\",\n    \"heading_size_px\": 16,\n    \"body_size_px\": 14,\n    \"heading_weight\": 600,\n    \"body_weight\": 400\n  },\n  \"layout\": {\n    \"max_width_px\": 1200,\n    \"container\": \"centered\",\n    \"columns\": 2,\n    \"header_present\": true,\n    \"footer_present\": false,\n    \"sidebar_present\": false,\n    \"sections\": [\"hero_dashboard_preview\"]\n  },\n  \"header\": {\n    \"present\": true,\n    \"logo_text\": \"\",\n    \"nav_items\": [],\n    \"right_side\": [\"notification_bell_icon\", \"user_avatar_dropdown\"],\n    \"background_color\": \"#FFFFFF\",\n    \"sticky\": true\n  },\n  \"hero\": {\n    \"present\": true,\n    \"headline\": \"\",\n    \"subheadline\": \"\",\n    \"primary_cta\": null,\n    \"secondary_cta\": null\n  },\n  \"content_sections\": [\n    {\n      \"name\": \"Dashboard Grid\",\n      \"type\": \"content_blocks\",\n      \"heading\": \"\",\n      \"subheading\": \"\",\n      \"items\": [\n        \"AI Match Score Card: Circular progress indicator showing 92% with 'Excellent' label. Includes info icon and more options menu.\",\n        \"PDF Inspector Card: Document preview with blurred text lines, centered magnifying glass icon overlay, and blue 'Inspect Now' button.\",\n        \"Claim Risk Card: Line chart visualization showing data trends over 'Last 30 Days' with blue gradient fill.\",\n        \"Policy Comparison Card: Table comparing Policy A ($145/mo) and Policy B ($100/mo) with checkmark indicators for features.\"\n      ],\n      \"layout\": \"grid-2\"\n    }\n  ],\n  \"footer\": {\n    \"present\": false,\n    \"columns\": [],\n    \"links\": [],\n    \"copyright_text\": \"\",\n    \"social_icons\": [],\n    \"background_color\": \"\"\n  },\n  \"forms\": [],\n  \"buttons\": [\n    {\n      \"label\": \"Inspect Now\",\n      \"style\": \"primary\",\n      \"location\": \"PDF Inspector card center\"\n    }\n  ],\n  \"icons\": [\n    \"logo_icon_blue_circle\",\n    \"notification_bell\",\n    \"user_avatar\",\n    \"info_circle\",\n    \"more_options_dots\",\n    \"magnifying_glass_search\",\n    \"checkmark_tick\"\n  ],\n  \"images\": [\n    \"Desktop monitor frame (black bezel, silver stand)\",\n    \"Blurred document preview background in PDF Inspector\",\n    \"Line chart graphic with blue gradient in Claim Risk card\"\n  ],\n  \"animations_interactions\": [\n    \"Hover states on cards (subtle shadow elevation)\",\n    \"Dropdown menu trigger on user avatar\",\n    \"Button hover effect on 'Inspect Now'\"\n  ],\n  \"responsive_cues\": [\n    \"Grid collapses to single column on mobile\",\n    \"Cards maintain padding consistency\",\n    \"Chart and circular progress scale proportionally\"\n  ],\n  \"notes\": \"The entire interface is presented within a realistic desktop monitor mockup. The design uses a clean, modern SaaS aesthetic with soft shadows, rounded corners (approx 12px), and a light blue accent color (#6B9DFC). The background of the page outside the monitor is very light gray/blue (#F0F4F8).\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1785511812,
+  "id": "20260731233005931a56b8205e4f61",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260731233005931a56b8205e4f61",
+  "usage": {
+    "completion_tokens": 881,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2570,
+    "prompt_tokens_details": {
+      "cached_tokens": 38
+    },
+    "total_tokens": 3451
+  }
+}

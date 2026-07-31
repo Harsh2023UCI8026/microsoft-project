@@ -1,0 +1,232 @@
+{
+  "page_id": "page-01",
+  "page_type": "home",
+  "page_name": "InsurIntel AI Homepage",
+  "purpose": "Landing page for InsurIntel AI showcasing AI-powered insurance decision tools, featuring hero section with dashboard preview, vertical-specific insurance cards, and a feature comparison band.",
+  "navigation_to": [
+    "Product",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Login",
+    "Get Started (signup)",
+    "Health Insurance details",
+    "Motor Insurance details",
+    "Life Insurance details"
+  ],
+  "color_palette": {
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "text_primary": "#0F172A",
+    "text_secondary": "#64748B",
+    "accent": "#2563EB",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Inter, -apple-system, sans-serif",
+    "body_font": "Inter, -apple-system, sans-serif",
+    "heading_size_px": 40,
+    "body_size_px": 16,
+    "heading_weight": 700,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 1,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": false,
+    "sections": [
+      "Header navigation",
+      "Hero section with headline and dashboard mockup",
+      "Insurance verticals grid (3 cards)",
+      "Blue CTA/feature comparison band",
+      "Footer with multi-column links"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [
+      "Product",
+      "Solutions",
+      "Pricing",
+      "Resources"
+    ],
+    "right_side": [
+      "Login",
+      "Get Started"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": false
+  },
+  "hero": {
+    "present": true,
+    "headline": "Make Smarter Insurance Decisions with AI",
+    "subheadline": "Compare policies, understand hidden clauses, inspect policy PDFs, simulate claims, and confidently choose the right insurance—all in one platform.",
+    "primary_cta": {
+      "label": "Get Personalized Recommendation →",
+      "style": "filled"
+    },
+    "secondary_cta": {
+      "label": "Browse Policies",
+      "style": "ghost"
+    },
+    "image_or_illustration": "Dashboard UI mockup showing analytics charts with a magnifying glass overlay displaying 'UNDERWRITING SCORE 98.4% Accuracy' in a floating card",
+    "background": "solid color (#F8FAFC)"
+  },
+  "content_sections": [
+    {
+      "name": "Insurance Verticals Grid",
+      "type": "features_grid",
+      "heading": "Precision Intelligence for Every Vertical",
+      "subheading": "Our AI agents specialize across diverse insurance sectors, providing deep-domain insights that generic models miss.",
+      "items": [
+        {
+          "title": "Health Insurance",
+          "description": "Get comprehensive coverage tailored to your medical history and lifestyle.",
+          "image": "Soft blue 3D illustration of medical/health icon on light purple background",
+          "cta": "Explore →"
+        },
+        {
+          "title": "Motor Insurance",
+          "description": "Navigate premiums and find the best protection for your vehicle with AI insights.",
+          "image": "Soft blue 3D illustration of car on light purple background with 'MOTOR INSURANCE' text",
+          "cta": "Explore →"
+        },
+        {
+          "title": "Life Insurance",
+          "description": "Secure your family's future with policies that grow and adapt to your needs.",
+          "image": "Soft blue 3D illustration of family/home protection icon in glass dome on light purple background",
+          "cta": "Explore →"
+        }
+      ],
+      "layout": "grid-3"
+    },
+    {
+      "name": "AI Precision Advantage Band",
+      "type": "content_blocks",
+      "heading": "Experience the AI Precision Advantage",
+      "subheading": "",
+      "items": [
+        {
+          "icon": "document-search",
+          "title": "Real-time Risk Analysis",
+          "description": "Instantly identify risks and hidden clauses in hundreds of pages of legal documentation."
+        },
+        {
+          "icon": "calculator",
+          "title": "Claim Simulations",
+          "description": "Run 'What-if' scenarios to see how different policies would handle your specific claim needs."
+        }
+      ],
+      "layout": "columns"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "Product",
+      "Solutions",
+      "Company",
+      "Legal"
+    ],
+    "links": [
+      "Policy Inspector",
+      "Risk Engine",
+      "Claim Simulator",
+      "Pricing Engine",
+      "Enterprise",
+      "Agents & Brokers",
+      "Corporate HR",
+      "Legal Teams",
+      "About Us",
+      "Careers",
+      "Press",
+      "Contact",
+      "Privacy Policy",
+      "Terms of Service",
+      "Security",
+      "Cookie Policy"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Precision underwriting for the Modern Era.",
+    "social_icons": [
+      "twitter",
+      "linkedin",
+      "github"
+    ],
+    "background_color": "#0F172A"
+  },
+  "forms": [],
+  "buttons": [
+    {
+      "label": "Get Started",
+      "style": "primary",
+      "location": "header right"
+    },
+    {
+      "label": "Login",
+      "style": "ghost",
+      "location": "header right"
+    },
+    {
+      "label": "Get Personalized Recommendation →",
+      "style": "primary",
+      "location": "hero"
+    },
+    {
+      "label": "Browse Policies",
+      "style": "ghost",
+      "location": "hero secondary"
+    },
+    {
+      "label": "View all sectors →",
+      "style": "ghost",
+      "location": "verticals section header"
+    },
+    {
+      "label": "Explore →",
+      "style": "outline",
+      "location": "Health Insurance card"
+    },
+    {
+      "label": "Explore →",
+      "style": "outline",
+      "location": "Motor Insurance card"
+    },
+    {
+      "label": "Explore →",
+      "style": "outline",
+      "location": "Life Insurance card"
+    }
+  ],
+  "icons": [
+    "shield-checkmark in logo",
+    "arrow-right in primary CTAs",
+    "magnifying-glass in hero dashboard overlay",
+    "check-circle or target in accuracy badge",
+    "document-text icon for Real-time Risk Analysis",
+    "calculator icon for Claim Simulations",
+    "social icons: twitter/X, linkedin, github in footer"
+  ],
+  "images": [
+    "Dashboard UI screenshot/mockup showing line chart, data table, circular progress indicator, and magnifying glass tool",
+    "Health Insurance card image: abstract 3D soft blue shape resembling medical cross or heart",
+    "Motor Insurance card image: 3D car model in soft blue tones",
+    "Life Insurance card image: 3D family figures inside glass dome/house structure"
+  ],
+  "animations_interactions": [
+    "Hover effects on navigation items (underline)",
+    "Button hover states (color shift)",
+    "Card hover effects (slight lift/shadow increase)",
+    "Scroll reveal animations for sections (fade up)",
+    "Potential parallax or floating animation on hero dashboard image"
+  ],
+  "responsive_cues": [
+    "Grid layout suggests mobile will stack vertically (1 column)",
+    "Header likely collapses to hamburger menu on mobile",
+    "CTA band likely stacks content above stats table on smaller screens"
+  ],
+  "notes": "The page uses a clean SaaS aesthetic with lots of whitespace. The blue accent color (#2563EB) is used consistently for primary actions. The hero features a complex dashboard mockup that appears to float with a drop shadow. The middle section uses 3 equal-width cards with consistent padding and rounded corners (likely 12-16px radius). The dark blue band (#1E40AF or similar) creates strong visual contrast for the feature comparison section which includes a 'Live Benchmarking' stats table showing Manual Review Time vs Insurintel AI Analysis (12 Seconds) and Cost Savings (22%/year). Footer is very dark navy/black (#0F172A) with muted gray text for links."
+}

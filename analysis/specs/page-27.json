@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_id\": \"page-27\",\n  \"page_type\": \"dashboard\",\n  \"page_name\": \"Insurance Readiness Dashboard\",\n  \"purpose\": \"A dashboard for monitoring insurance readiness, document status, and hospital network availability for emergency hospitalization.\",\n  \"header_logo\": \"InsureIntel AI\",\n  \"header_nav\": [\n    \"Claims\",\n    \"Hospitals\",\n    \"Documents\",\n    \"Policies\"\n  ],\n  \"header_right\": [\n    \"Search claims or hospitals...\",\n    \"Notification Bell\",\n    \"Settings Gear\",\n    \"User Avatar\"\n  ],\n  \"hero_headline\": \"READY FOR HOSPITALIZATION\nEmergency Readiness: 94%\",\n  \"hero_subheadline\": \"BOARDING CLEARED | UPDATED 2M AGO\",\n  \"sections\": [\n    {\n      \"name\": \"Main Navigation Sidebar\",\n      \"heading\": \"MAIN NAVIGATION\",\n      \"items\": [\n        \"Readiness\",\n        \"Coverage\",\n        \"Claims\",\n        \"Documents\",\n        \"AI Assistant\"\n      ],\n      \"layout\": \"columns\"\n    },\n    {\n      \"name\": \"Readiness Score Card\",\n      \"heading\": \"READINESS SCORE\",\n      \"items\": [\n        \"94 OUT OF 100\",\n        \"AI Verdict: \"You are cleared for immediate cashless hospitalization at all Tier-1 network facilities.\"\"\n      ],\n      \"layout\": \"rows\"\n    },\n    {\n      \"name\": \"Documents Ready Card\",\n      \"heading\": \"4/5 VERIFIED Documents Ready\",\n      \"items\": [\n        \"Identity Verification Complete\",\n        \"Pending: Recent Discharge Summary\"\n      ],\n      \"layout\": \"rows\"\n    },\n    {\n      \"name\": \"Network Hospitals Card\",\n      \"heading\": \"CASHLESS; ACTIVE Network Hospitals\",\n      \"items\": [\n        \"3 FACILITIES NEARBY\",\n        \"City General (0.8 KM)\",\n        \"Heart Institute (2.4 KM)\"\n      ],\n      \"layout\": \"rows\"\n    },\n    {\n      \"name\": \"Preparedness Sync Status\",\n      \"heading\": \"Preparedness SYNC STATUS\",\n      \"items\": [\n        \"DIGITAL CARD\",\n        \"CONTACTS SYNCED\"\n      ],\n      \"layout\": \"grid-2\"\n    },\n    {\n      \"name\": \"Cashless Availability Status\",\n      \"heading\": \"CASHLESS AVAILABILITY\",\n      \"items\": [\n        \"Confirmed - Verified for San Francisco Area\"\n      ],\n      \"layout\": \"rows\"\n    },\n    {\n      \"name\": \"Critical Departure Checklist\",\n      \"heading\": \"Critical Departure Checklist\",\n      \"subheading\": \"BOARDING GROUP A\",\n      \"items\": [\n        \"Digital Insurance Card (Securely stored in IntelWallet™)\",\n        \"Medical History Update (Quarterly sync required for Platinum tier) [DUE IN 3 DAYS]\",\n        \"Preferred Hospital Selected (City General (Primary Facility))\",\n        \"Network Hospital Guide Downloaded (Offline access available for all Tier-1 facilities)\"\n      ],\n      \"layout\": \"rows\"\n    }\n  ],\n  \"footer_copyright\": \"This dashboard is an AI-powered readiness predictor. While accurate to 94%, always carry physical ID for emergency admissions.\",\n  \"colors\": {\n    \"background\": \"#F5F7FA\",\n    \"surface\": \"#FFFFFF\",\n    \"accent\": \"#1E6BFF\"\n  }\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1785511998,
+  "id": "202607312333120dcb7ecb272e4dcb",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202607312333120dcb7ecb272e4dcb",
+  "usage": {
+    "completion_tokens": 715,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2068,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 2783
+  }
+}

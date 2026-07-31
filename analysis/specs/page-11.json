@@ -1,0 +1,331 @@
+{
+  "page_id": "page-01",
+  "page_type": "product",
+  "page_name": "Insurance Policy Browser / Catalog",
+  "purpose": "A searchable, filterable catalog of insurance policies allowing users to browse options, compare coverage details, view AI-generated insights, and access policy documents.",
+  "navigation_to": [
+    "Product",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Login",
+    "Get Started",
+    "Policy Detail Pages"
+  ],
+  "color_palette": {
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "text_primary": "#0F172A",
+    "text_secondary": "#64748B",
+    "accent": "#1D4ED8",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Inter (or system sans-serif)",
+    "body_font": "Inter (or system sans-serif)",
+    "heading_size_px": 36,
+    "body_size_px": 16,
+    "heading_weight": 700,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 2,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": false,
+    "sections": [
+      "Header Navigation",
+      "Progress Stepper",
+      "Page Hero with Search",
+      "Filter Bar",
+      "Policy Cards Grid (2-column)",
+      "Pagination",
+      "Footer"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [
+      "Product",
+      "Solutions",
+      "Pricing",
+      "Resources"
+    ],
+    "right_side": [
+      "Login",
+      "Get Started"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": false
+  },
+  "hero": {
+    "present": true,
+    "headline": "Browse Insurance Policies",
+    "subheadline": "Discover precision-underwritten coverage powered by our neural analysis engine. Transparency and claim intelligence at your fingertips.",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "None - text-based hero with search bar",
+    "background": "solid color (#F8FAFC)"
+  },
+  "content_sections": [
+    {
+      "name": "Progress Stepper",
+      "type": "steps",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        {
+          "step": 1,
+          "label": "HOME",
+          "status": "completed"
+        },
+        {
+          "step": 2,
+          "label": "SELECTION",
+          "status": "completed"
+        },
+        {
+          "step": 3,
+          "label": "RECOMMENDATION",
+          "status": "completed"
+        },
+        {
+          "step": 4,
+          "label": "COMPARISON",
+          "status": "active"
+        },
+        {
+          "step": 5,
+          "label": "DEEP-DIVE",
+          "status": "upcoming"
+        },
+        {
+          "step": 6,
+          "label": "DECISION",
+          "status": "upcoming"
+        }
+      ],
+      "layout": "horizontal stepper"
+    },
+    {
+      "name": "Search & Filter Section",
+      "type": "form",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "Search by policy name, company, or keyword...",
+        "Advanced Filters button",
+        "Insurance Type dropdown: All Types",
+        "Company dropdown: All Providers",
+        "Max Premium slider: $250/mo",
+        "Sort By dropdown: Premium (Low-High)"
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Policy Cards Grid",
+      "type": "content_blocks",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        {
+          "title": "Elite Platinum Health",
+          "company": "by Zenith Global",
+          "price": "$185/mo",
+          "badge": "SPONSORED",
+          "icon": "shield/health icon",
+          "coverage_amount": "$1,000,000",
+          "waiting_period": "12 Months",
+          "ai_insight": "AI Insight: Optimal choice for families seeking zero co-pay options with immediate emergency coverage.",
+          "transparency": "86%",
+          "claim_friendlyness": "HIGH",
+          "actions": [
+            "View Details",
+            "Compare",
+            "Inspect PDF"
+          ]
+        },
+        {
+          "title": "SafeTravel Comprehensive",
+          "company": "by SafeGuard Life",
+          "price": "$92/mo",
+          "badge": null,
+          "icon": "shield/travel icon",
+          "coverage_amount": "$250,000",
+          "waiting_period": "None",
+          "ai_insight": "AI Insight: Best value for frequent flyers with extended luggage and cancellation protection.",
+          "transparency": "85%",
+          "claim_friendlyness": "MEDIUM",
+          "actions": [
+            "View Details",
+            "Compare",
+            "Inspect PDF"
+          ]
+        },
+        {
+          "title": "AutoShield Prime",
+          "company": "by DriveSecure",
+          "price": "$115/mo",
+          "badge": null,
+          "icon": "car/auto icon",
+          "liability_limit": "$500,000",
+          "deductible": "$250",
+          "ai_insight": "AI Insight: Significant discounts for EV owners and drivers with telematics-linked monitoring apps.",
+          "transparency": "92%",
+          "claim_friendlyness": "HIGH",
+          "actions": [
+            "View Details",
+            "Compare",
+            "Inspect PDF"
+          ]
+        },
+        {
+          "title": "Legacy Whole Life",
+          "company": "by Heritage Assurance",
+          "price": "$210/mo",
+          "badge": null,
+          "icon": "heart/life icon",
+          "sum_assured": "$2,500,000",
+          "premium_term": "25 Years",
+          "ai_insight": "AI Insight: Superior cash value accumulation with guaranteed bonuses for non-smokers.",
+          "transparency": "79%",
+          "claim_friendlyness": "MEDIUM",
+          "actions": [
+            "View Details",
+            "Compare",
+            "Inspect PDF"
+          ]
+        }
+      ],
+      "layout": "grid-2"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "InsurIntel AI",
+      "PRODUCT",
+      "COMPANY",
+      "SUPPORT"
+    ],
+    "links": [
+      "Advanced risk modeling for the next generation of financial stability.",
+      "Overview",
+      "Solutions",
+      "Pricing",
+      "About",
+      "Careers",
+      "Press",
+      "Help Center",
+      "Contact",
+      "Security"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Precision Underwriting for the Modern Era.",
+    "social_icons": [],
+    "background_color": "#F8FAFC"
+  },
+  "forms": [
+    {
+      "name": "Search Bar",
+      "fields": [
+        {
+          "label": "Search",
+          "type": "search",
+          "placeholder": "Search by policy name, company, or keyword...",
+          "required": false
+        }
+      ],
+      "submit_button_label": null
+    },
+    {
+      "name": "Filter Controls",
+      "fields": [
+        {
+          "label": "Insurance Type",
+          "type": "select",
+          "placeholder": "All Types",
+          "required": false
+        },
+        {
+          "label": "Company",
+          "type": "select",
+          "placeholder": "All Providers",
+          "required": false
+        },
+        {
+          "label": "Max Premium",
+          "type": "range",
+          "placeholder": "",
+          "required": false
+        },
+        {
+          "label": "Sort By",
+          "type": "select",
+          "placeholder": "Premium (Low-High)",
+          "required": false
+        }
+      ],
+      "submit_button_label": null
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Get Started",
+      "style": "primary",
+      "location": "header right"
+    },
+    {
+      "label": "Advanced Filters",
+      "style": "ghost",
+      "location": "search bar right"
+    },
+    {
+      "label": "View Details",
+      "style": "primary",
+      "location": "policy card bottom"
+    },
+    {
+      "label": "Compare",
+      "style": "outline",
+      "location": "policy card bottom"
+    },
+    {
+      "label": "Inspect PDF",
+      "style": "ghost",
+      "location": "policy card bottom"
+    }
+  ],
+  "icons": [
+    "check-circle in progress stepper (completed steps)",
+    "circle-number in progress stepper (active/upcoming steps)",
+    "search magnifying glass in search input",
+    "sliders/filter icon in Advanced Filters button",
+    "shield icon in Elite Platinum Health card",
+    "shield icon in SafeTravel Comprehensive card",
+    "car icon in AutoShield Prime card",
+    "heart icon in Legacy Whole Life card",
+    "sparkles/AI icon in AI insight boxes",
+    "document/file icon in Inspect PDF buttons",
+    "left/right arrows in pagination"
+  ],
+  "images": [
+    "No photographs present; all visual elements are UI components, icons, and typography"
+  ],
+  "animations_interactions": [
+    "Hover effects on policy cards (likely subtle shadow elevation or border color change)",
+    "Hover states on all buttons (color shifts)",
+    "Slider interaction for Max Premium filter",
+    "Dropdown interactions for filters",
+    "Pagination click interaction",
+    "Progress stepper visual states (completed/active/upcoming)"
+  ],
+  "responsive_cues": [
+    "Two-column grid layout suggests tablet/desktop breakpoint where it may collapse to single column on mobile",
+    "Horizontal scroll likely on progress stepper for small screens",
+    "Filter bar likely stacks vertically on mobile"
+  ],
+  "notes": "The page uses a clean, data-dense SaaS aesthetic. Each policy card contains structured metadata in a grid format within the card. AI insights are highlighted with a distinct background color (light gray) and sparkle icon. Transparency is shown as both a percentage and a progress bar. Claim friendliness uses color-coded badges (green for HIGH, yellow/orange for MEDIUM). The first card has a 'SPONSORED' badge indicating potential ad placement."
+}

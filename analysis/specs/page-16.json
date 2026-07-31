@@ -1,0 +1,248 @@
+{
+  "page_id": "page-03",
+  "page_type": "other",
+  "page_name": "Medical & Financial Profile Form",
+  "purpose": "Final step (Step 3 of 3) of an insurance onboarding wizard where users input health history, budget, and location data to generate personalized AI-powered insurance recommendations.",
+  "navigation_to": [
+    "Profile: Complete",
+    "Save Progress",
+    "Product",
+    "Analyzer",
+    "Compare",
+    "Claims AI",
+    "Help Center",
+    "API Docs",
+    "Whitepapers",
+    "Privacy",
+    "Terms",
+    "Security",
+    "Twitter",
+    "LinkedIn",
+    "Status"
+  ],
+  "color_palette": {
+    "background": "#F5F7FA",
+    "surface": "#FFFFFF",
+    "text_primary": "#111827",
+    "text_secondary": "#6B7280",
+    "accent": "#1D4ED8",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "heading_font": "Inter, -apple-system, sans-serif",
+    "body_font": "Inter, -apple-system, sans-serif",
+    "heading_size_px": 28,
+    "body_size_px": 15,
+    "heading_weight": 700,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1100,
+    "container": "centered",
+    "columns": 2,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": true,
+    "sections": [
+      "Header Navigation",
+      "Page Title & Progress Bar",
+      "Main Content Area (Form + Sidebar)",
+      "Footer"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [],
+    "right_side": [
+      "PROFILE: COMPLETE",
+      "Save Progress"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": false
+  },
+  "hero": {
+    "present": false,
+    "headline": "",
+    "subheadline": "",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": null,
+    "background": "solid color"
+  },
+  "content_sections": [
+    {
+      "name": "Form Header",
+      "type": "other",
+      "heading": "Medical & Financial Profile",
+      "subheading": "Final Step — Step 3 of 3",
+      "items": [
+        "Progress bar indicator spanning full width with blue active segment"
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Health Information Section",
+      "type": "form",
+      "heading": "Health Information",
+      "subheading": "",
+      "items": [
+        "Existing Diseases field with placeholder 'e.g. Hypertension, Type 2 Diabetes' and helper text 'List any chronic conditions you are currently managing.'",
+        "Previous Surgeries textarea with placeholder 'Describe any major surgeries in the last 5 years'",
+        "Pre-existing Insurance dropdown set to 'None'",
+        "Insurance Duration dropdown set to 'N/A'"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Budget & Location Section",
+      "type": "form",
+      "heading": "Budget & Location",
+      "subheading": "",
+      "items": [
+        "Monthly Budget text field with '$500' placeholder and dollar icon prefix",
+        "City text field with 'e.g. New York' placeholder and location pin icon prefix"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Live Analysis Card",
+      "type": "other",
+      "heading": "Live Analysis",
+      "subheading": "As you fill in these details, our engine is cross-referencing 4,200+ policy variations to find your perfect match.",
+      "items": [
+        "Data Confidence: High (with blue progress bar)"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Coverage Heatmap Card",
+      "type": "other",
+      "heading": "Coverage Heatmap",
+      "subheading": "",
+      "items": [
+        "Placeholder image showing 'AI Calculating Premium Ranges...' with abstract chart visualization"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Security Badge",
+      "type": "other",
+      "heading": "Secure Underwriting",
+      "subheading": "256-bit AES Encryption Enabled",
+      "items": [
+        "Shield icon"
+      ],
+      "layout": "columns"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "InsurIntel AI",
+      "Product",
+      "Resources",
+      "Legal"
+    ],
+    "links": [
+      "Precision underwriting powered by generative intelligence...",
+      "Analyzer",
+      "Compare",
+      "Claims AI",
+      "Help Center",
+      "API Docs",
+      "Whitepapers",
+      "Privacy",
+      "Terms",
+      "Security"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Precision Underwriting for the Modern Era.",
+    "social_icons": [
+      "twitter",
+      "linkedin"
+    ],
+    "background_color": "#FFFFFF"
+  },
+  "forms": [
+    {
+      "name": "Medical & Financial Profile Form",
+      "fields": [
+        {
+          "label": "Existing Diseases",
+          "type": "text",
+          "placeholder": "e.g. Hypertension, Type 2 Diabetes",
+          "required": false
+        },
+        {
+          "label": "Previous Surgeries",
+          "type": "textarea",
+          "placeholder": "Describe any major surgeries in the last 5 years",
+          "required": false
+        },
+        {
+          "label": "Pre-existing Insurance",
+          "type": "select",
+          "placeholder": "None",
+          "required": false
+        },
+        {
+          "label": "Insurance Duration",
+          "type": "select",
+          "placeholder": "N/A",
+          "required": false
+        },
+        {
+          "label": "Monthly Budget",
+          "type": "text",
+          "placeholder": "$ 500",
+          "required": false
+        },
+        {
+          "label": "City",
+          "type": "text",
+          "placeholder": "e.g. New York",
+          "required": false
+        }
+      ],
+      "submit_button_label": "Generate My Recommendation ✨"
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Save Progress",
+      "style": "ghost",
+      "location": "header right"
+    },
+    {
+      "label": "Generate My Recommendation ✨",
+      "style": "primary",
+      "location": "bottom of form"
+    }
+  ],
+  "icons": [
+    "shield-check logo in header",
+    "briefcase/medical-bag icon for Health Information section heading",
+    "calculator icon for Budget & Location section heading",
+    "radar/pulse icon for Live Analysis card",
+    "trending-up/chart icon in Coverage Heatmap image",
+    "shield-lock icon for Secure Underwriting badge",
+    "dollar-sign icon in Monthly Budget field",
+    "map-pin/location icon in City field",
+    "sparkles icon in Generate button"
+  ],
+  "images": [
+    "Coverage Heatmap placeholder image showing blue gradient background with white chart lines and text overlay 'AI Calculating Premium Ranges...'"
+  ],
+  "animations_interactions": [
+    "Progress bar fill animation",
+    "Live Analysis confidence meter dynamic update as user types",
+    "Button hover state with slight lift/shadow increase",
+    "Input focus states with blue border highlight",
+    "Dropdown chevron rotation on open"
+  ],
+  "responsive_cues": [
+    "Two-column layout (main form left ~65%, sidebar right ~35%) suggests stacking to single column on mobile",
+    "Form fields in Budget & Location section appear side-by-side suggesting they stack vertically on smaller screens"
+  ],
+  "notes": "This is a multi-step form (Step 3 of 3) indicated by the progress bar. The sidebar provides real-time feedback ('Live Analysis') and trust signals (security badge). The form uses a clean, medical/fintech aesthetic with ample whitespace. All form fields appear to have rounded corners (~8px radius) and light gray borders. The primary CTA is full-width within the form container."
+}

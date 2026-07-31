@@ -1,0 +1,79 @@
+{
+  "page_id": "page-01",
+  "page_type": "landing",
+  "page_name": "Motor Insurance Hero",
+  "purpose": "A minimalist hero landing page for motor insurance that uses a 3D illustration to convey protection and premium coverage.",
+  "navigation_to": [],
+  "color_palette": {
+    "background": "#F0F4F8",
+    "surface": "#FFFFFF",
+    "text_primary": "#8BA4C7",
+    "text_secondary": "#A5B9D1",
+    "accent": "#B8CDE6",
+    "border": "#E2EAF3"
+  },
+  "typography": {
+    "heading_font": "Didot, Bodoni MT, or similar high-contrast serif font",
+    "body_font": "Montserrat, Helvetica Neue, or similar clean sans-serif font",
+    "heading_size_px": 52,
+    "body_size_px": 18,
+    "heading_weight": 400,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 1,
+    "header_present": false,
+    "footer_present": false,
+    "sidebar_present": false,
+    "sections": [
+      "hero"
+    ]
+  },
+  "header": {
+    "present": false,
+    "logo_text": "",
+    "nav_items": [],
+    "right_side": [],
+    "background_color": "",
+    "sticky": false
+  },
+  "hero": {
+    "present": true,
+    "headline": "MOTOR INSURANCE",
+    "subheadline": "PREMIUM COVERAGE",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "Centered 3D rendered illustration of a stylized, rounded car in light blue and white tones, featuring a transparent shield icon with a checkmark on the side door. The car appears to be floating above an elliptical platform with soft shadows. The style is soft, clay-like, and modern with pastel blue color palette (#B8CDE6, #D4E2F1).",
+    "background": "gradient (very subtle light blue to white gradient)"
+  },
+  "content_sections": [],
+  "footer": {
+    "present": false,
+    "columns": [],
+    "links": [],
+    "copyright_text": "",
+    "social_icons": [],
+    "background_color": ""
+  },
+  "forms": [],
+  "buttons": [],
+  "icons": [
+    "shield-with-checkmark icon on the car door (transparent/glass effect)",
+    "subtle circular emblem inside the shield"
+  ],
+  "images": [
+    "3D rendered stylized car illustration (light blue/white, floating on elliptical base)",
+    "soft gradient background (light blue to off-white)"
+  ],
+  "animations_interactions": [
+    "potential subtle float animation on the 3D car (gentle up/down motion)",
+    "possible parallax effect between background gradient and foreground elements"
+  ],
+  "responsive_cues": [
+    "Single column centered layout suggests mobile-first or fully responsive design",
+    "Text sizing likely reduces on smaller screens while maintaining center alignment"
+  ],
+  "notes": "This is an extremely minimal, elegant hero section likely used as the top portion of a larger insurance landing page. The design relies heavily on the 3D illustration as the primary visual element. The color palette is monochromatic blues creating a calm, trustworthy, premium feel. Typography is all-caps for the headline with generous letter-spacing. No navigation, footer, or CTAs are visible in this specific view."
+}

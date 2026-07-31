@@ -1,0 +1,93 @@
+{
+  "page_id": "page-01",
+  "page_type": "landing",
+  "page_name": "Health Insurance Hero Section",
+  "purpose": "A visually striking hero section for a health insurance landing page, featuring a 3D glassmorphism illustration to establish trust and modernity.",
+  "navigation_to": [],
+  "color_palette": {
+    "background": "#C4D6F7",
+    "surface": "#FFFFFF",
+    "text_primary": "#1E3A8A",
+    "text_secondary": "#64748B",
+    "accent": "#93C5FD",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Inter, system-ui, sans-serif",
+    "body_font": "Inter, system-ui, sans-serif",
+    "heading_size_px": 48,
+    "body_size_px": 18,
+    "heading_weight": 700,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 1,
+    "header_present": false,
+    "footer_present": false,
+    "sidebar_present": false,
+    "sections": [
+      "hero"
+    ]
+  },
+  "header": {
+    "present": false,
+    "logo_text": "",
+    "nav_items": [],
+    "right_side": [],
+    "background_color": "",
+    "sticky": false
+  },
+  "hero": {
+    "present": true,
+    "headline": "",
+    "subheadline": "",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "3D glassmorphism medical cross with heart cutout floating above a translucent pill-shaped base with 'HEALTH INSURANCE' text",
+    "background": "solid color - light blue gradient (#C4D6F7 to #B4C9F5)"
+  },
+  "content_sections": [
+    {
+      "name": "Hero Visual",
+      "type": "other",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "3D translucent blue cross symbol with rounded edges and soft shadows",
+        "Heart-shaped negative space in center of cross",
+        "Frosted glass/pill base with rounded rectangle shape",
+        "'HEALTH INSURANCE' text in white uppercase letters on the base"
+      ],
+      "layout": "columns"
+    }
+  ],
+  "footer": {
+    "present": false,
+    "columns": [],
+    "links": [],
+    "copyright_text": "",
+    "social_icons": [],
+    "background_color": ""
+  },
+  "forms": [],
+  "buttons": [],
+  "icons": [
+    "medical-cross (3D rendered)",
+    "heart-shape (as negative space)"
+  ],
+  "images": [
+    "Central 3D illustration: Glassmorphism health insurance icon featuring a blue translucent cross with heart cutout on frosted pill base"
+  ],
+  "animations_interactions": [
+    "Subtle floating animation on the 3D cross element",
+    "Soft shadow dynamics suggesting light source from upper left",
+    "Potential parallax depth effect between cross and base"
+  ],
+  "responsive_cues": [
+    "Centered composition suggests mobile-friendly vertical stacking",
+    "Illustration likely scales down proportionally on smaller screens"
+  ],
+  "notes": "This appears to be a hero section or key visual component focused entirely on brand identity through 3D illustration. The design uses glassmorphism trends with translucent materials, soft lighting, and a calming blue palette appropriate for healthcare/insurance. The combination of cross (medical) and heart (care) symbolism reinforces the health insurance value proposition. No text content is visible in this specific viewport - it may be a visual-only section or text may appear above/below the illustrated area."
+}

@@ -1,0 +1,268 @@
+{
+  "page_id": "page-01",
+  "page_type": "dashboard",
+  "page_name": "AI Policy Inspector Dashboard",
+  "purpose": "A comprehensive insurance policy analysis dashboard that allows users to upload PDFs for deep-dive neural analysis of clauses, risks, and hidden terms, providing transparency scores, key insights, and actionable recommendations.",
+  "navigation_to": [
+    "Product",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Login",
+    "Get Started (Signup)",
+    "Home",
+    "Selection",
+    "Recommendation",
+    "Comparison",
+    "Final Decision"
+  ],
+  "color_palette": {
+    "background": "#F5F7FA",
+    "surface": "#FFFFFF",
+    "text_primary": "#1E293B",
+    "text_secondary": "#64748B",
+    "accent": "#2563EB",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Inter, -apple-system, sans-serif",
+    "body_font": "Inter, -apple-system, sans-serif",
+    "heading_size_px": 24,
+    "body_size_px": 14,
+    "heading_weight": 600,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 3,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": false,
+    "sections": [
+      "Top Navigation Bar",
+      "Progress Stepper",
+      "Page Title & Description",
+      "File Upload Zone",
+      "Analysis Results Dashboard (Transparency Score + Neural Summary + Key Insights)",
+      "Metrics Grid (Policy Highlights, Waiting Periods, Exclusions, Documents)",
+      "Neural Red Flags & Fixes Section",
+      "Footer"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [
+      "Product",
+      "Solutions",
+      "Pricing",
+      "Resources"
+    ],
+    "right_side": [
+      "Login",
+      "Get Started"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": false
+  },
+  "hero": {
+    "present": false,
+    "headline": "",
+    "subheadline": "",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "",
+    "background": ""
+  },
+  "content_sections": [
+    {
+      "name": "Progress Stepper",
+      "type": "steps",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "HOME",
+        "SELECTION",
+        "RECOMMENDATION",
+        "COMPARISON",
+        "DEEP DIVE",
+        "FINAL DECISION"
+      ],
+      "layout": "horizontal-steps"
+    },
+    {
+      "name": "Upload Zone",
+      "type": "form",
+      "heading": "AI Policy Inspector",
+      "subheading": "Upload any insurance policy PDF for a deep-dive neural analysis of clauses, risks, and hidden terms. Empower your underwriting with precision.",
+      "items": [
+        "Drop zone with cloud icon",
+        "MAX 5MB button",
+        "PDF/DOCX button"
+      ],
+      "layout": "centered-upload"
+    },
+    {
+      "name": "Analysis Results",
+      "type": "content_blocks",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "Transparency Score: 98% circular progress indicator with 'Not clarity on policy limits' note",
+        "Neural Summary: Comprehensive General Liability (CGL) policy analysis text",
+        "Key Insight: Cyber extortion included in base coverage with no extra deductible",
+        "Attention Required: Waiting period for business interruption is 48 hours vs 24h market standard"
+      ],
+      "layout": "grid-2-with-sidebar"
+    },
+    {
+      "name": "Quick Metrics Grid",
+      "type": "stats",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "Policy Highlights: Full Worldwide Coverage, Prior Acts Included",
+        "Waiting Periods: Theft/Burglary 30 Days, General Loss None",
+        "Exclusions: Intentional Misconduct (red), Nuclear/Biological Risk (red)",
+        "Documents: KYC Compliance (checked), Underwriting Report (checked), Medical Annex (unchecked)"
+      ],
+      "layout": "grid-4"
+    },
+    {
+      "name": "Red Flags & Fixes",
+      "type": "features_grid",
+      "heading": "Neural Red Flags & Fixes (3)",
+      "subheading": "",
+      "items": [
+        {
+          "tag": "HIGH-SEVERITY",
+          "title": "Ambiguous Co-payment Clause",
+          "description": "The terminology used on Page 14 regarding co-pay splits for outpatient surgical procedures is statistically likely to cause claim friction.",
+          "recommendation": "Append a rider to explicitly define percentage mass cost sharing.",
+          "cta": "Fix This Now"
+        },
+        {
+          "tag": "COMPLIANCE",
+          "title": "Non-Standard Notice Period",
+          "description": "The 15-day cancellation notice period falls below the mandated state minimum of 30 days for this commercial category.",
+          "recommendation": "Update clause 8.2 to reflect 30-day statutory minimums.",
+          "cta": "Apply Statutory Fix"
+        },
+        {
+          "tag": "OPTIMIZATION",
+          "title": "Insufficient Subrogation Right",
+          "description": "Current wording limits the insurer's ability to recover losses from third-party contractors due to waiver broadness.",
+          "recommendation": "Insert third-wave language to preserve primary recovery rights.",
+          "cta": "Optimize Clause"
+        }
+      ],
+      "layout": "grid-3"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "InsurIntel AI",
+      "Product",
+      "Company",
+      "Resources"
+    ],
+    "links": [
+      "Precision underwriting and neural policy analysis for the modern insurance era.",
+      "Policy Inspector",
+      "Risk Scoring",
+      "API Access",
+      "About Us",
+      "Careers",
+      "Privacy",
+      "Documentation",
+      "Help Center",
+      "Blog"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Precision Underwriting for the Modern Era.",
+    "social_icons": [],
+    "background_color": "#FFFFFF"
+  },
+  "forms": [
+    {
+      "name": "File Upload Form",
+      "fields": [],
+      "submit_button_label": ""
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Get Started",
+      "style": "primary",
+      "location": "Header right"
+    },
+    {
+      "label": "Login",
+      "style": "ghost",
+      "location": "Header right"
+    },
+    {
+      "label": "MAX 5MB",
+      "style": "outline",
+      "location": "Upload zone"
+    },
+    {
+      "label": "PDF/DOCX",
+      "style": "outline",
+      "location": "Upload zone"
+    },
+    {
+      "label": "Download Risk Report",
+      "style": "ghost",
+      "location": "Red Flags section header"
+    },
+    {
+      "label": "Fix This Now",
+      "style": "outline",
+      "location": "Red Flag card 1"
+    },
+    {
+      "label": "Apply Statutory Fix",
+      "style": "outline",
+      "location": "Red Flag card 2"
+    },
+    {
+      "label": "Optimize Clause",
+      "style": "outline",
+      "location": "Red Flag card 3"
+    }
+  ],
+  "icons": [
+    "Cloud upload icon in drop zone",
+    "Sparkles icon in Neural Summary heading",
+    "Key/Lightbulb icon in Key Insight",
+    "Clock/Alert icon in Attention Required",
+    "Check-circle icons in Policy Highlights",
+    "Clock icon in Waiting Periods",
+    "X-circle icons in Exclusions",
+    "Document icon in Documents section",
+    "Warning triangle icons in Red Flag cards",
+    "Wrench/tool icons in CTA buttons",
+    "Download arrow in Download Risk Report link"
+  ],
+  "images": [
+    "Circular progress chart showing 98% Transparency Score",
+    "Progress bar visualization for Theft/Burglary waiting period (30 Days)"
+  ],
+  "animations_interactions": [
+    "Drag-and-drop file upload interaction with hover state change on drop zone",
+    "Progress stepper with active step highlighting (Deep Dive)",
+    "Circular progress animation for Transparency Score",
+    "Hover effects on all cards (subtle shadow increase or border color change)",
+    "Tag color coding (red for HIGH-SEVERITY and COMPLIANCE, blue for OPTIMIZATION)",
+    "Checkbox states in Documents section (checked vs unchecked)"
+  ],
+  "responsive_cues": [
+    "Grid layouts will collapse to single column on mobile",
+    "Upload zone will stack vertically on smaller screens",
+    "Red flag cards will stack vertically on tablet/mobile",
+    "Navigation may collapse to hamburger menu on mobile"
+  ],
+  "notes": "This is Step 5 of 6 in a multi-step workflow (Deep Dive). The page shows results after a PDF has been analyzed. The design uses a clean, professional SaaS aesthetic with blue as the primary accent color. Cards use white backgrounds with subtle borders and rounded corners (approximately 8-12px radius). The overall spacing is generous with consistent padding around sections."
+}

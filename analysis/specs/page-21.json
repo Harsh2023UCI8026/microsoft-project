@@ -1,0 +1,296 @@
+{
+  "page_id": "page-01",
+  "page_type": "product",
+  "page_name": "Insurance Recommendations Dashboard",
+  "purpose": "Displays AI-curated insurance recommendations with detailed comparison cards, a data table of options, and an interactive side-by-side comparison tool to help users select the best plan.",
+  "navigation_to": [
+    "Product",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Login",
+    "Get Started"
+  ],
+  "color_palette": {
+    "background": "#F8F9FC",
+    "surface": "#FFFFFF",
+    "text_primary": "#111827",
+    "text_secondary": "#6B7280",
+    "accent": "#2563EB",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "heading_font": "Inter, system-ui, sans-serif",
+    "body_font": "Inter, system-ui, sans-serif",
+    "heading_size_px": 32,
+    "body_size_px": 14,
+    "heading_weight": 700,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 1,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": false,
+    "sections": [
+      "Header Navigation",
+      "Page Title & Breadcrumb",
+      "Featured Recommendation Card (Hero)",
+      "Secondary Recommendation Cards Grid",
+      "Recommendations Data Table",
+      "Side-by-Side Comparison Table",
+      "Footer"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [
+      "Product",
+      "Solutions",
+      "Pricing",
+      "Resources"
+    ],
+    "right_side": [
+      "Login",
+      "Get Started"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": false
+  },
+  "hero": {
+    "present": true,
+    "headline": "Your Top Recommendations",
+    "subheadline": "Based on your age, risk profile, and financial history, our AI has curated the 7 most suitable insurance strategies for your portfolio.",
+    "primary_cta": {
+      "label": null,
+      "style": null
+    },
+    "secondary_cta": null,
+    "image_or_illustration": "None - text-based hero section with icons for view toggle and share",
+    "background": "solid color (#F8F9FC)"
+  },
+  "content_sections": [
+    {
+      "name": "Featured Recommendation",
+      "type": "content_blocks",
+      "heading": null,
+      "subheading": null,
+      "items": [
+        {
+          "badge": "AI RECOMMENDED",
+          "title": "Health Shield Pro Plus",
+          "subtitle": "Underwritten by Global Assurance Group",
+          "tag": "TOP PICK",
+          "price_label": "MONTHLY PREMIUM",
+          "price": "$145/mo",
+          "coverage_label": "TOTAL COVERAGE",
+          "coverage_amount": "$500,000",
+          "match_score": "98%",
+          "ai_verdict_heading": "AI Verdict",
+          "ai_verdict_text": "Excellent match for your demographic. Comprehensive coverage with low deductibles. Strong network in your area.",
+          "features": [
+            "Claim friendliness: High",
+            "Transparency: 9/10",
+            "Waiting Period: 2 Years",
+            "Hospital Network: 1,000+"
+          ],
+          "buttons": [
+            "View Details",
+            "Compare"
+          ]
+        }
+      ],
+      "layout": "grid-1"
+    },
+    {
+      "name": "Secondary Recommendations",
+      "type": "features_grid",
+      "heading": null,
+      "subheading": null,
+      "items": [
+        {
+          "title": "Motor Guard Ultra",
+          "tag": "TOP RATED",
+          "match_score": "94%",
+          "premium": "$82/mo",
+          "coverage": "$200,000",
+          "description": "Optimized for your annual mileage and safe driver history. Offers premium roadside assistance that rivals dedicated policies.",
+          "buttons": [
+            "Details",
+            "Compare"
+          ]
+        },
+        {
+          "title": "Life Asset Shield",
+          "tag": "TOP VALUE",
+          "match_score": "91%",
+          "premium": "$210/mo",
+          "coverage": "$1.2M",
+          "description": "Highest cost-benefit ratio for your age bracket. Includes a unique inflation-adjustment rider that grows with your wealth.",
+          "buttons": [
+            "Details",
+            "Compare"
+          ]
+        }
+      ],
+      "layout": "grid-2"
+    },
+    {
+      "name": "Recommendations Table",
+      "type": "table",
+      "heading": null,
+      "subheading": null,
+      "items": [
+        {
+          "policy_name": "SecureHome Premium",
+          "premium": "$65/mo",
+          "coverage": "$350,000",
+          "ai_score": "94%"
+        },
+        {
+          "policy_name": "TravelSafe Elite",
+          "premium": "$12/mo",
+          "coverage": "$50,000",
+          "ai_score": "89%"
+        },
+        {
+          "policy_name": "Dental Care Pro",
+          "premium": "$35/mo",
+          "coverage": "$5,000",
+          "ai_score": "82%"
+        }
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Side-by-Side Comparison",
+      "type": "table",
+      "heading": "Side-by-Side Comparison",
+      "subheading": null,
+      "items": [
+        {
+          "column_header": "Health Shield Pro",
+          "price": "$145/mo"
+        },
+        {
+          "column_header": "GlobalLife Care",
+          "price": "$102/mo"
+        },
+        {
+          "column_header": "SafeHorizon Plus",
+          "price": "$138/mo"
+        }
+      ],
+      "layout": "columns"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "InsurIntel AI",
+      "Product",
+      "Company",
+      "Legal",
+      "Newsletter"
+    ],
+    "links": [
+      "Features",
+      "Solutions",
+      "Pricing",
+      "Resources",
+      "About",
+      "Careers",
+      "Press",
+      "Support",
+      "Privacy",
+      "Terms",
+      "Security",
+      "Cookies"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Precision Underwriting for the Modern Era. All Rights Reserved.",
+    "social_icons": [],
+    "background_color": "#FFFFFF"
+  },
+  "forms": [
+    {
+      "name": "Newsletter Signup",
+      "fields": [
+        {
+          "label": "Email",
+          "type": "email",
+          "placeholder": "Email",
+          "required": true
+        }
+      ],
+      "submit_button_label": "→"
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Get Started",
+      "style": "primary",
+      "location": "header"
+    },
+    {
+      "label": "View Details",
+      "style": "filled",
+      "location": "featured card"
+    },
+    {
+      "label": "Compare",
+      "style": "outline",
+      "location": "featured card"
+    },
+    {
+      "label": "Details",
+      "style": "outline",
+      "location": "secondary cards"
+    },
+    {
+      "label": "Compare",
+      "style": "outline",
+      "location": "secondary cards"
+    },
+    {
+      "label": "Download full report",
+      "style": "ghost",
+      "location": "comparison section"
+    },
+    {
+      "label": "AVERDICT",
+      "style": "filled",
+      "location": "comparison table row"
+    }
+  ],
+  "icons": [
+    "sparkles icon in breadcrumb",
+    "list/grid toggle icons next to heading",
+    "share icon next to heading",
+    "shield icon in featured card logo area",
+    "check-circle icons in feature list",
+    "info-circle icon for 'Import KPI'",
+    "download icon for full report",
+    "chevron-down for 'Hidden Clauses' expandable row",
+    "arrow-right in newsletter submit button"
+  ],
+  "images": [
+    "Placeholder logo/icon area for 'Health Shield' in the featured recommendation card"
+  ],
+  "animations_interactions": [
+    "Hover states on all buttons (color shifts)",
+    "Card hover effects (subtle shadow increase)",
+    "Table row hover highlighting",
+    "Expandable 'Hidden Clauses' accordion row in comparison table",
+    "Match score circular progress indicators (likely animated on load)",
+    "Sticky header behavior assumed"
+  ],
+  "responsive_cues": [
+    "Grid layout for secondary recommendations suggests stacking to single column on mobile",
+    "Comparison table likely becomes horizontally scrollable or stacked cards on smaller screens",
+    "Header nav items likely collapse into hamburger menu on mobile"
+  ],
+  "notes": "The page uses a clean, data-dense dashboard aesthetic typical of fintech/insurtech products. The 'AI Score' badges use blue pill-shaped backgrounds. The comparison table has a fixed left column for feature names while the product columns scroll. The 'Verdict' button at the bottom of the comparison is prominently styled in the primary brand blue."
+}

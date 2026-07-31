@@ -1,0 +1,271 @@
+{
+  "page_id": "page-01",
+  "page_type": "dashboard",
+  "page_name": "Insurance Claim Simulator Dashboard",
+  "purpose": "An interactive insurance underwriting simulation tool that allows users to model complex claim scenarios, visualize coverage gaps, and receive AI-powered optimization recommendations.",
+  "navigation_to": [
+    "Product",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Login",
+    "Get Started"
+  ],
+  "color_palette": {
+    "background": "#F5F7FA",
+    "surface": "#FFFFFF",
+    "text_primary": "#1A2332",
+    "text_secondary": "#64748B",
+    "accent": "#2563EB",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Inter (sans-serif)",
+    "body_font": "Inter (sans-serif)",
+    "heading_size_px": 24,
+    "body_size_px": 14,
+    "heading_weight": 600,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 3,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": false,
+    "sections": [
+      "Header Navigation",
+      "Page Title & Description",
+      "Process Stepper/Tabs",
+      "Main Dashboard Grid (Left Sidebar Controls + Center Results + Right Sidebar Insights)",
+      "Cost Breakdown Chart",
+      "AI Strategy Optimization Banner",
+      "Footer"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [
+      "Product",
+      "Solutions",
+      "Pricing",
+      "Resources"
+    ],
+    "right_side": [
+      "Login",
+      "Get Started"
+    ],
+    "background_color": "#F5F7FA",
+    "sticky": true
+  },
+  "hero": {
+    "present": false,
+    "headline": "",
+    "subheadline": "",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "",
+    "background": ""
+  },
+  "content_sections": [
+    {
+      "name": "Page Header",
+      "type": "content_blocks",
+      "heading": "INTELLIGENT UNDERWRITING",
+      "subheading": "What-if Claim Simulator",
+      "items": [
+        "Experience the power of precision underwriting. Simulate complex claim scenarios against your current policies to predict approval rates and coverage gaps instantly."
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "Process Navigation",
+      "type": "steps",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "Home",
+        "Selection",
+        "Recommendation",
+        "Comparison",
+        "Deep Dive",
+        "Final Decision"
+      ],
+      "layout": "columns"
+    },
+    {
+      "name": "Simulation Dashboard",
+      "type": "other",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        "CHOOSE POLICY: Health Shield Pro Plus dropdown",
+        "CHOOSE SCENARIO: Hospitalization (selected), Accident, Critical Illness, Surgery, Natural Disaster buttons",
+        "Scenario Parameters: Estimated Bill Amount ($25,000), Hospital Type (Tier 1 Multi-specialty), Room Type (Private Suite)",
+        "Run AI Simulation button",
+        "ESTIMATED CLAIM PAYOUT: $21,250.00 with 85% of bill covered badge",
+        "APPROVAL CONFIDENCE: 94% High with circular progress indicator",
+        "Coverage Risks: Non-Network Surcharge warning, Room Rent Cap Exceeded warning",
+        "Filing Checklist: Itemized Hospital Bill (checked), Discharge Summary (checked), Pre-Auth Letter (unchecked)"
+      ],
+      "layout": "grid-3"
+    },
+    {
+      "name": "Cost Breakdown Analysis",
+      "type": "other",
+      "heading": "Cost Breakdown Analysis",
+      "subheading": "",
+      "items": [
+        "Bar chart showing Hospital, Room Rent, Surgery, Medicine, Lab Tests with Covered Amount vs Out of Pocket legend"
+      ],
+      "layout": "rows"
+    },
+    {
+      "name": "AI Strategy Optimization",
+      "type": "cta_band",
+      "heading": "AI Strategy Optimization",
+      "subheading": "Based on your policy, shifting to St. Jude Preferred eliminates the non-network penalty, increasing your net payout by $2,500.",
+      "items": [
+        "Apply Optimization button",
+        "Full AI Report button"
+      ],
+      "layout": "rows"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "InsurIntel AI",
+      "PRODUCT",
+      "COMPANY",
+      "LEGAL"
+    ],
+    "links": [
+      "Precision Underwriting for the Modern Era empowering carriers and policyholders with instant AI insights.",
+      "Solutions",
+      "Pricing",
+      "API Docs",
+      "About Us",
+      "Careers",
+      "Contact",
+      "Privacy Policy",
+      "Terms of Use",
+      "Compliance"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Built with precision in New York.",
+    "social_icons": [
+      "globe",
+      "settings",
+      "help-circle"
+    ],
+    "background_color": "#F5F7FA"
+  },
+  "forms": [
+    {
+      "name": "Simulation Parameters Form",
+      "fields": [
+        {
+          "label": "Estimated Bill Amount",
+          "type": "text",
+          "placeholder": "$ 25,000",
+          "required": true
+        },
+        {
+          "label": "Hospital Type",
+          "type": "select",
+          "placeholder": "Tier 1 (Multi-specialty)",
+          "required": true
+        },
+        {
+          "label": "Room Type",
+          "type": "select",
+          "placeholder": "Private Suite",
+          "required": true
+        }
+      ],
+      "submit_button_label": "Run AI Simulation"
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Get Started",
+      "style": "primary",
+      "location": "Header right"
+    },
+    {
+      "label": "Hospitalization",
+      "style": "primary",
+      "location": "Scenario selector"
+    },
+    {
+      "label": "Accident",
+      "style": "ghost",
+      "location": "Scenario selector"
+    },
+    {
+      "label": "Critical Illness",
+      "style": "ghost",
+      "location": "Scenario selector"
+    },
+    {
+      "label": "Surgery",
+      "style": "ghost",
+      "location": "Scenario selector"
+    },
+    {
+      "label": "Natural Disaster",
+      "style": "ghost",
+      "location": "Scenario selector"
+    },
+    {
+      "label": "Run AI Simulation",
+      "style": "primary",
+      "location": "Left sidebar bottom"
+    },
+    {
+      "label": "Apply Optimization",
+      "style": "primary",
+      "location": "AI banner"
+    },
+    {
+      "label": "Full AI Report",
+      "style": "outline",
+      "location": "AI banner"
+    }
+  ],
+  "icons": [
+    "sparkles icon next to INTELLIGENT UNDERWRITING heading",
+    "circle icons with numbers/letters in stepper navigation (Home, Selection, Recommendation, Comparison, Deep Dive, Final Decision)",
+    "chevron-down icon in Health Shield Pro Plus dropdown",
+    "play icon in Run AI Simulation button",
+    "shield-check icon in 85% of bill covered badge",
+    "trending-up icon inside approval confidence circle chart",
+    "alert-triangle icon in Coverage Risks section header",
+    "clipboard-list icon in Filing Checklist section header",
+    "check-circle icons for completed checklist items",
+    "circle icon for incomplete checklist item",
+    "lightbulb icon in AI Strategy Optimization section",
+    "wand-sparkles icon in Apply Optimization button",
+    "download icon in Full AI Report button",
+    "globe, settings, and help-circle icons in footer"
+  ],
+  "images": [],
+  "animations_interactions": [
+    "Hover states on navigation tabs highlighting active step",
+    "Toggle selection on scenario buttons (Hospitalization selected state vs others)",
+    "Dropdown interactions for policy and parameter selectors",
+    "Click interaction on Run AI Simulation button triggering loading state then results update",
+    "Circular progress animation on approval confidence indicator",
+    "Checkbox interactions in filing checklist",
+    "Hover effects on Apply Optimization and Full AI Report buttons",
+    "Sticky header behavior on scroll"
+  ],
+  "responsive_cues": [
+    "Three-column dashboard layout likely collapses to single column on mobile",
+    "Horizontal stepper may become vertical or scrollable on smaller screens",
+    "Chart may need horizontal scroll or resize on tablet/mobile"
+  ],
+  "notes": "This is a sophisticated B2B SaaS dashboard for insurance underwriting. The design uses a clean, professional aesthetic with blue as the primary action color. The layout is information-dense with clear visual hierarchy separating input controls (left), primary output (center), and secondary insights (right). All monetary values use dollar signs and comma separators. Warning states use red text for emphasis (10% co-pay, $200/day limit). The AI optimization section at the bottom serves as a smart recommendation engine overlay."
+}

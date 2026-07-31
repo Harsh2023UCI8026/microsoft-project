@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_id\": \"page-04\",\n  \"page_type\": \"landing\",\n  \"page_name\": \"Insurance Protection Hero\",\n  \"purpose\": \"A landing page hero section designed to convey security, family protection, and trust through 3D illustration and a clean, minimalist aesthetic.\",\n  \"navigation_to\": [\n    \"pricing\",\n    \"features\",\n    \"about\",\n    \"contact\"\n  ],\n  \"color_palette\": {\n    \"background\": \"#F0F6FC\",\n    \"surface\": \"#FFFFFF\",\n    \"text_primary\": \"#1E3A5F\",\n    \"text_secondary\": \"#5B7A99\",\n    \"accent\": \"#8BBDF9\",\n    \"border\": \"#D1E3F5\"\n  },\n  \"typography\": {\n    \"heading_font\": \"Inter, sans-serif\",\n    \"body_font\": \"Inter, sans-serif\",\n    \"heading_size_px\": 48,\n    \"body_size_px\": 18,\n    \"heading_weight\": 700,\n    \"body_weight\": 400\n  },\n  \"layout\": {\n    \"max_width_px\": 1200,\n    \"container\": \"centered\",\n    \"columns\": 1,\n    \"header_present\": true,\n    \"footer_present\": false,\n    \"sidebar_present\": false,\n    \"sections\": [\n      \"hero_visual\"\n    ]\n  },\n  \"header\": {\n    \"present\": true,\n    \"logo_text\": \"SecureLife\",\n    \"nav_items\": [\n      \"Products\",\n      \"Coverage\",\n      \"Resources\"\n    ],\n    \"right_side\": [\n      \"Log In\",\n      \"Get Quote\"\n    ],\n    \"background_color\": \"#FFFFFF\",\n    \"sticky\": true\n  },\n  \"hero\": {\n    \"present\": true,\n    \"headline\": \"Protecting What Matters Most\",\n    \"subheadline\": \"Comprehensive insurance solutions for your family's future, backed by industry-leading security and support.\",\n    \"primary_cta\": {\n      \"label\": \"Start Your Coverage\",\n      \"style\": \"filled\"\n    },\n    \"secondary_cta\": null\n  },\n  \"content_sections\": [\n    {\n      \"name\": \"Hero Visual\",\n      \"type\": \"other\",\n      \"heading\": \"\",\n      \"subheading\": \"\",\n      \"items\": [],\n      \"layout\": \"grid-1\"\n    }\n  ],\n  \"footer\": {\n    \"present\": false,\n    \"columns\": [],\n    \"links\": [],\n    \"copyright_text\": \"\",\n    \"social_icons\": [],\n    \"background_color\": \"\"\n  },\n  \"forms\": [],\n  \"buttons\": [\n    {\n      \"label\": \"Start Your Coverage\",\n      \"style\": \"primary\",\n      \"location\": \"hero_section\"\n    },\n    {\n      \"label\": \"Get Quote\",\n      \"style\": \"outline\",\n      \"location\": \"header_right\"\n    }\n  ],\n  \"icons\": [\n    \"umbrella_icon\",\n    \"shield_icon\",\n    \"family_group_icon\",\n    \"document_stack_icon\"\n  ],\n  \"images\": [\n    \"3D isometric illustration of a blue-toned family (father, mother, child) standing under a transparent umbrella on a white platform, accompanied by a glass shield and floating document icons.\"\n  ],\n  \"animations_interactions\": [\n    \"Subtle parallax effect on the 3D illustration\",\n    \"Gentle floating animation for the document icons\",\n    \"Hover state scaling for the primary CTA button\"\n  ],\n  \"notes\": \"The design relies heavily on a high-quality 3D asset to establish trust and emotional connection. The color palette is strictly monochromatic blue/white to maintain a professional and calming atmosphere.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1785511940,
+  "id": "20260731233214ddef6d88f576415e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260731233214ddef6d88f576415e",
+  "usage": {
+    "completion_tokens": 771,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2401,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 3172
+  }
+}

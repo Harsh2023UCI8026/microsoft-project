@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_id\": \"page-05\",\n  \"page_type\": \"product\",\n  \"page_name\": \"Insurance Recommendations\",\n  \"purpose\": \"A dashboard-style page displaying AI-generated insurance recommendations, detailed product cards for health and other insurance types, and a side-by-side comparison table.\",\n  \"header_logo\": \"Insurintel AI\",\n  \"header_nav\": [\n    \"Product\",\n    \"Solutions\",\n    \"Pricing\",\n    \"Resources\"\n  ],\n  \"header_right\": [\n    \"Login\",\n    \"Get Started\"\n  ],\n  \"hero_headline\": \"Your Top Recommendations\",\n  \"hero_subheadline\": \"Based on your risk profile and financial history, our AI has curated the 7 most suitable insurance strategies for your portfolio.\",\n  \"sections\": [\n    {\n      \"name\": \"Progress Stepper\",\n      \"heading\": \"\",\n      \"subheading\": \"\",\n      \"items\": [\n        \"Home\",\n        \"Selection\",\n        \"Recommendation\",\n        \"Comparison\",\n        \"Deep Dive\",\n        \"Final Decision\"\n      ],\n      \"layout\": \"rows\"\n    },\n    {\n      \"name\": \"Featured Recommendation Card\",\n      \"heading\": \"Health Shield Pro Plus\",\n      \"subheading\": \"Underwritten by Global Assurance Group\",\n      \"items\": [\n        \"$145/mo\",\n        \"$500,000\",\n        \"98% Match\",\n        \"View Details\",\n        \"Compare\",\n        \"Import Policy/PDF\",\n        \"Claim Handling: High\",\n        \"Transparency: 9/10\",\n        \"Waiting Period: 2 Years\",\n        \"Hospitals/Networks: 8,000+\"\n      ],\n      \"layout\": \"columns\"\n    },\n    {\n      \"name\": \"Secondary Recommendations Grid\",\n      \"heading\": \"\",\n      \"subheading\": \"\",\n      \"items\": [\n        \"Motor Guard Ultra - $32/mo - $200,000 - 94%\",\n        \"Life Asset Shield - $210/mo - $1.2M - 91%\"\n      ],\n      \"layout\": \"grid-2\"\n    },\n    {\n      \"name\": \"Comparison Table\",\n      \"heading\": \"Side-by-Side Comparison\",\n      \"subheading\": \"Detailed breakdown of top-performing options.\",\n      \"items\": [\n        \"Health Shield Pro\",\n        \"Global Life Care\",\n        \"Saferizon Plus\",\n        \"Coverage Amount\",\n        \"Waiting Period\",\n        \"Hidden Clauses\",\n        \"Co-payment\",\n        \"Network Hospitals\",\n        \"AI Verdict\"\n      ],\n      \"layout\": \"columns\"\n    },\n    {\n      \"name\": \"Footer\",\n      \"heading\": \"Insurintel AI\",\n      \"subheading\": \"Revolutionizing risk analysis with AI. Built with trust, transparency, and intelligence. Licensed and regulated for global operations.\",\n      \"items\": [\n        \"Product (Features, Solutions, Pricing, Resources)\",\n        \"Company (About, Careers, Press, Support)\",\n        \"Legal (Privacy Policy, Terms of Service, Security Policy, Cookie Policy)\"\n      ],\n      \"layout\": \"columns\"\n    }\n  ],\n  \"footer_copyright\": \"© 2024 Insurintel Platform. Underwriting by the Modesto Life Alliance Networked.\",\n  \"colors\": {\n    \"background\": \"#F8FAFC\",\n    \"surface\": \"#FFFFFF\",\n    \"accent\": \"#2563EB\"\n  }\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1785511974,
+  "id": "20260731233248b03064f4d78a4e3d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260731233248b03064f4d78a4e3d",
+  "usage": {
+    "completion_tokens": 707,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2068,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 2775
+  }
+}

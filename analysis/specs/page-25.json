@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_id\": \"page-25\",\n  \"page_type\": \"product\",\n  \"page_name\": \"AI Diagnostic Engine\",\n  \"purpose\": \"A detailed dashboard for analyzing insurance claim risks using AI, providing transparency on policy coverage and potential rejection factors before purchase.\",\n  \"header_logo\": \"InsurIntel AI\",\n  \"header_nav\": [\n    \"Product\",\n    \"Solutions\",\n    \"Pricing\",\n    \"Resources\"\n  ],\n  \"header_right\": [\n    \"Login\",\n    \"Get Started\"\n  ],\n  \"hero_headline\": \"Understand your claim risks before buying.\",\n  \"hero_subheadline\": \"Our neural underwriting engine analyzes thousands of historical claim denials to predict the transparency and reliability of your specific policy coverage in real-time.\",\n  \"sections\": [\n    {\n      \"name\": \"Process Stepper\",\n      \"heading\": null,\n      \"subheading\": \"< AI DIAGNOSTIC ENGINE\",\n      \"items\": [\n        \"Policy Selection\",\n        \"Deep Dive\",\n        \"Comparison\",\n        \"Checkout\"\n      ],\n      \"layout\": \"columns\"\n    },\n    {\n      \"name\": \"Claim Rejection Risk Dashboard\",\n      \"heading\": \"CLAIM REJECTION RISK\",\n      \"subheading\": \"35% Moderate Risk - Your profile presents a 35% probability of claim friction based on document transparency and waiting periods.\",\n      \"items\": [\n        \"Pre-existing disease: 92% Intensity\",\n        \"Waiting Period: 54% Intensity\",\n        \"Documentation: 70% Intensity\",\n        \"Network Hospital: 38% Intensity\"\n      ],\n      \"layout\": \"grid-2\"\n    },\n    {\n      \"name\": \"Deep Diagnostic Analysis\",\n      \"heading\": \"Deep Diagnostic Analysis\",\n      \"subheading\": \"Critical rejection factors identified by our AI audit. View all 10 factors →\",\n      \"items\": [\n        {\n          \"title\": \"Robotic Surgery Exclusion\",\n          \"severity\": \"HIGH SEVERITY\",\n          \"probability\": \"18% Prob.\",\n          \"description\": \"AI Explanation: Policy clause 4.2 excludes specific robotic surgeries unless they are life-saving. Modern minimally invasive procedures may be denied.\",\n          \"action\": \"HOW TO FIX: Opt for the Surgical Rider add-on to include advanced modalities.\"\n        },\n        {\n          \"title\": \"Domiciliary Hospitalization\",\n          \"severity\": \"MEDIUM SEVERITY\",\n          \"probability\": \"12% Prob.\",\n          \"description\": \"AI Explanation: Policy has a 3-day minimum hospitalization requirement. Home-based treatments are restricted under current base terms.\",\n          \"action\": \"HOW TO FIX: Upgrade to 'Gold' tier for comprehensive home-care coverage.\"\n        },\n        {\n          \"title\": \"Room Rent Cap Discrepancy\",\n          \"severity\": \"LOW SEVERITY\",\n          \"probability\": \"5% Prob.\",\n          \"description\": \"AI Explanation: If you choose a suite, proportionate deductions will apply to all medical bills, including doctor fees.\",\n          \"action\": \"HOW TO FIX: Ensure chosen hospital room fits within the 'Single Private' category.\"\n        }\n      ],\n      \"layout\": \"grid-3\"\n    },\n    {\n      \"name\": \"Safety Score & Checklist\",\n      \"heading\": \"Safety Score\",\n      \"subheading\": \"85/100 - Your potential for a smooth claim process is high. Follow the steps below to reach 100% confidence.\",\n      \"items\": [\n        \"Verify PED Disclosure\",\n        \"Download Network List\",\n        \"AI Document Review\",\n        \"Co-pay Finalization\",\n        \"Finalize Policy Details\"\n      ],\n      \"layout\": \"rows\"\n    }\n  ],\n  \"footer_copyright\": \"© 2024 InsurIntel AI. Precision Underwriting for the Modern Era. Automated diagnostic analysis provided by neural models. Not a legal guarantee of claim payment.\",\n  \"colors\": {\n    \"background\": \"#F5F7FA\",\n    \"surface\": \"#FFFFFF\",\n    \"accent\": \"#1E6BFF\"\n  }\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1785511992,
+  "id": "20260731233254be1fe6a86eb245d4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260731233254be1fe6a86eb245d4",
+  "usage": {
+    "completion_tokens": 848,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2068,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 2916
+  }
+}

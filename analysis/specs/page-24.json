@@ -1,0 +1,220 @@
+{
+  "page_id": "page-01",
+  "page_type": "dashboard",
+  "page_name": "Policy Life Cycle Dashboard",
+  "purpose": "Displays the user's insurance policy timeline with AI-driven insights, status tracking, and access to a predictive underwriting dashboard for real-time risk assessment.",
+  "navigation_to": [
+    "Product",
+    "Solutions",
+    "Pricing",
+    "Resources",
+    "Login",
+    "Get Started",
+    "Overview",
+    "About",
+    "Careers",
+    "Press",
+    "Contact",
+    "Help Center",
+    "Security",
+    "API Docs",
+    "Privacy",
+    "Terms",
+    "Legal"
+  ],
+  "color_palette": {
+    "background": "#F5F7FA",
+    "surface": "#FFFFFF",
+    "text_primary": "#111827",
+    "text_secondary": "#6B7280",
+    "accent": "#1D4ED8",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_size_px": 40,
+    "body_size_px": 16,
+    "heading_weight": 700,
+    "body_weight": 400
+  },
+  "layout": {
+    "max_width_px": 1200,
+    "container": "centered",
+    "columns": 3,
+    "header_present": true,
+    "footer_present": true,
+    "sidebar_present": false,
+    "sections": [
+      "Header Navigation",
+      "Hero Section (Policy Life Cycle)",
+      "Timeline Visualization",
+      "Predictive Underwriting Dashboard Preview",
+      "Footer"
+    ]
+  },
+  "header": {
+    "present": true,
+    "logo_text": "InsurIntel AI",
+    "nav_items": [
+      "Product",
+      "Solutions",
+      "Pricing",
+      "Resources"
+    ],
+    "right_side": [
+      "Login",
+      "Get Started"
+    ],
+    "background_color": "#FFFFFF",
+    "sticky": false
+  },
+  "hero": {
+    "present": true,
+    "headline": "Policy Life Cycle",
+    "subheadline": "Your coverage evolves as you do. Track every milestone, waiting period, and potential reward with AI-driven insights tailored to your journey.",
+    "primary_cta": null,
+    "secondary_cta": null,
+    "image_or_illustration": "None - text-based hero with icon badge",
+    "background": "solid color"
+  },
+  "content_sections": [
+    {
+      "name": "Policy Timeline Steps",
+      "type": "steps",
+      "heading": "",
+      "subheading": "",
+      "items": [
+        {
+          "step_label": "CURRENT",
+          "date": "OCT 14, 2024",
+          "title": "Today",
+          "description": "Current status: Policy issuance. Your digital certificates are now active.",
+          "action_link": "Active Status",
+          "icon": "settings/gear"
+        },
+        {
+          "step_label": "Countdown: 28 Days",
+          "title": "Waiting Period Ends",
+          "ai_insight": "Initial 30-day window for illness coverage completion.",
+          "insight_type": "AI EXPLANATION",
+          "icon": "calendar/clock"
+        },
+        {
+          "step_label": "Milestone",
+          "title": "Coverage Activated",
+          "description": "Full protection active. All exclusions lifted.",
+          "recommendation": "Sync health tracker for premium discounts",
+          "recommendation_type": "RECOMMENDATION",
+          "cta_button": "Sync Tracker",
+          "icon": "shield-check"
+        }
+      ],
+      "layout": "grid-3"
+    },
+    {
+      "name": "Dashboard Preview",
+      "type": "content_blocks",
+      "heading": "Predictive Underwriting Dashboard",
+      "subheading": "Go beyond the timeline. Access real-time risk assessments and policy optimization tools powered by our proprietary AI engine.",
+      "items": [
+        {
+          "title": "Launch Dashboard",
+          "style": "primary",
+          "icon": "rocket"
+        },
+        {
+          "title": "Download Schedule",
+          "style": "outline"
+        }
+      ],
+      "layout": "columns"
+    }
+  ],
+  "footer": {
+    "present": true,
+    "columns": [
+      "InsurIntel AI",
+      "Product",
+      "Company",
+      "Support",
+      "Legal"
+    ],
+    "links": [
+      "Overview",
+      "Solutions",
+      "Pricing",
+      "Resources",
+      "About",
+      "Careers",
+      "Press",
+      "Contact",
+      "Help Center",
+      "Security",
+      "API Docs",
+      "Privacy",
+      "Terms",
+      "Legal"
+    ],
+    "copyright_text": "© 2024 InsurIntel AI. Precision Underwriting for the Modern Era.",
+    "social_icons": [
+      "globe",
+      "share"
+    ],
+    "background_color": "#FFFFFF"
+  },
+  "forms": [],
+  "buttons": [
+    {
+      "label": "Get Started",
+      "style": "primary",
+      "location": "header"
+    },
+    {
+      "label": "Active Status",
+      "style": "ghost",
+      "location": "timeline card 1"
+    },
+    {
+      "label": "Sync Tracker",
+      "style": "filled-dark",
+      "location": "timeline card 3"
+    },
+    {
+      "label": "Launch Dashboard",
+      "style": "primary",
+      "location": "dashboard section"
+    },
+    {
+      "label": "Download Schedule",
+      "style": "outline",
+      "location": "dashboard section"
+    }
+  ],
+  "icons": [
+    "sparkle/badge in 'INTELLIGENT PROTECTION' label",
+    "gear/settings icon in first timeline node",
+    "circular progress indicator (286) in second node",
+    "shield-check icon in third node",
+    "info-circle in 'Active Status' link",
+    "lightning bolt in 'AI EXPLANATION'",
+    "star/sparkle in 'RECOMMENDATION'",
+    "rocket in Launch Dashboard button",
+    "globe and share icons in footer"
+  ],
+  "images": [
+    "Dashboard UI mockup showing analytics dashboard with charts, maps, and data tables in a browser chrome frame"
+  ],
+  "animations_interactions": [
+    "Timeline connecting line between cards",
+    "Hover states on all buttons and links",
+    "Potential scroll reveal for the dashboard preview section",
+    "Interactive countdown timer display"
+  ],
+  "responsive_cues": [
+    "Timeline likely stacks vertically on mobile",
+    "Dashboard preview image likely moves below text on smaller screens",
+    "Footer columns collapse to fewer columns on mobile"
+  ],
+  "notes": "The page uses a clean, professional SaaS aesthetic with a light blue-gray background. The timeline visualization is the central feature, using a horizontal line connecting three status cards. Each card has a distinct state (current/past/future). The 'Resources' nav item appears to be active/underlined indicating this is the current section."
+}

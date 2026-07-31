@@ -208,8 +208,8 @@ export function SimplifierPage() {
                         }`}
                     >
                       <span className={`mt-0.5 flex h-5 w-5 items-center justify-center rounded-full text-[9px] font-bold ${c.impact === "high" ? "bg-rose-100 text-rose-700"
-                          : c.impact === "medium" ? "bg-amber-100 text-amber-700"
-                            : "bg-emerald-100 text-emerald-700"
+                        : c.impact === "medium" ? "bg-amber-100 text-amber-700"
+                          : "bg-emerald-100 text-emerald-700"
                         }`}>
                         {i + 1}
                       </span>

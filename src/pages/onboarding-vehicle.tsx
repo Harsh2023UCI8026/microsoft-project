@@ -61,16 +61,16 @@ export function OnboardingVehiclePage() {
             <div
               key={s.label}
               className={`rounded-xl border p-3 text-center ${s.active
-                  ? "border-blue-500 bg-blue-50"
-                  : s.done
-                    ? "border-emerald-200 bg-emerald-50"
-                    : "border-slate-200 bg-white"
+                ? "border-blue-500 bg-blue-50"
+                : s.done
+                  ? "border-emerald-200 bg-emerald-50"
+                  : "border-slate-200 bg-white"
                 }`}
             >
               <div className="flex items-center justify-center gap-2">
                 <span className={`flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold ${s.active ? "bg-blue-600 text-white"
-                    : s.done ? "bg-emerald-500 text-white"
-                      : "bg-slate-200 text-slate-500"
+                  : s.done ? "bg-emerald-500 text-white"
+                    : "bg-slate-200 text-slate-500"
                   }`}>
                   {s.done ? <CheckCircle2 className="h-3 w-3" /> : i + 1}
                 </span>
@@ -170,8 +170,8 @@ export function OnboardingVehiclePage() {
                     key={u.value}
                     onClick={() => setUsage(u.value)}
                     className={`rounded-xl border p-3 text-left transition-all ${usage === u.value
-                        ? "border-blue-500 bg-blue-50"
-                        : "border-slate-200 bg-white hover:border-slate-300"
+                      ? "border-blue-500 bg-blue-50"
+                      : "border-slate-200 bg-white hover:border-slate-300"
                       }`}
                   >
                     <div className="text-sm font-semibold text-slate-900">{u.label}</div>

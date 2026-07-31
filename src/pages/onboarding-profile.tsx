@@ -344,3 +344,5 @@ export function OnboardingProfilePage() {
     </div>
   );
 }
+
+export default OnboardingProfilePage;

@@ -279,6 +279,8 @@ export function OnboardingRiskPage() {
   );
 }
 
+export default OnboardingRiskPage;
+
 function ChoiceRow({
   label,
   value,

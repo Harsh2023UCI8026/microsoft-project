@@ -343,3 +343,5 @@ function generateResponse(input: string): string {
   }
   return "Great question! Let me look that up in your policy.\n\nBased on my analysis of your Health Shield Pro Plus plan and our 4M+ policy knowledge base, I can give you a precise answer. Could you share a bit more context about what you're trying to decide?";
 }
+
+export default AIAssistantPage;

@@ -169,6 +169,8 @@ export function ResourcesPage() {
   );
 }
 
+export default ResourcesPage;
+
 const CATEGORIES = [
   { icon: <Heart className="h-5 w-5" />, title: "Health Insurance", description: "Plans, coverage, claims, and cashless networks", count: 42, route: "hero-health", toneBg: "bg-rose-50", toneText: "text-rose-600" },
   { icon: <Car className="h-5 w-5" />, title: "Motor Insurance", description: "IDV, depreciation, claims, and riders", count: 28, route: "hero-motor", toneBg: "bg-blue-50", toneText: "text-blue-600" },

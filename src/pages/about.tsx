@@ -363,3 +363,5 @@ const ACHIEVEMENTS = [
   { icon: <Sparkles className="h-4 w-4" />, label: "AI Power User", detail: "50+ AI chats", unlocked: true },
   { icon: <TrendingUp className="h-4 w-4" />, label: "Risk Master", detail: "Score 90+", unlocked: false },
 ];
+
+export default AboutPage;

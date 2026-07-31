@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-
+import { RouterProvider } from "@/lib/router";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -48,7 +48,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
       >
-        {children}
+        <RouterProvider>
+          {children}
+        </RouterProvider>
         <Toaster />
       </body>
     </html>

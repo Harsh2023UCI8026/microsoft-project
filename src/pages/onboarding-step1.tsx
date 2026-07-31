@@ -192,3 +192,5 @@ export function OnboardingStep1Page() {
     </div>
   );
 }
+
+export default OnboardingStep1Page;
